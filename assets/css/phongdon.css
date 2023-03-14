@@ -212,117 +212,118 @@ body{
 
 /* END MAIN HEADER */
 /* END HEADER */
-/* SLIDER*/
-.picture-slider img{
-    max-width: 100%;
-    /* height: 200px; */
+
+/* body */
+
+
+.body-paper .sub-about-us{
+    width: 100%;
+    height: 54px;
+    background-color: #efecec;  
 }
-/* end */
-/* START CONTENT ABOUT */
-.content-about{
+.body-paper svg{
+    width: 15px;
+}
+.home-svg{
     display: flex;
-    padding-top: 20px;
-
 }
-.picture-about .img-about img{
-    width: auto ;
-    max-height: 100%;
-    position: absolute;
-    margin: auto;
-    display:flex;
+.svg-svg{
+    display: flex;
+    align-items: center;
+    /* width: 100%;
+    height: 100%; */
 }
-.img-about .load-about{
-    padding: 6px 40px;
+.body-paper .container{
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
-.content-intro{
-    padding: 50px 100px;
-
-    
-}
-.content-intro .name-intro{
-    font-weight: bold;
-    font-size: 26px;
-    color: #333;
-    right: 0;
-
-}
-.content-intro .title-intro{
-    font-weight: 500;
-    font-size: 22px;
-    color: #333;
-    
-}
-.content-intro .infor-intro p{
-    /* padding: 10px 0px; */
-    padding-top: -100px;
-}
-.infor-intro p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    line-height: 1.7;
-    font-size: 10 px;
-
-}
-.infor-intro .see-more a{
-    display: block;
-    background-color: #a1731d;  
-    text-decoration: none;
-    color: #fff;
-    padding: 18px 29px;
-    margin: 0px 2px;
+.sub-about-us .home-page{
+    margin: 0px;
+    font-size: 13px;
+    display: flex;
+    padding: 15px 0px;
+    border-radius: 0;
+    line-height: 24px;
+    background-color: transparent;
+    width: 100%;
     text-align: center;
-}
-.infor-intro .see-more{
-    width: 140px;
-    height: 30px;
-}
-.content-intro .border-border{
-    border: 5px solid #e0dbdb;
-    width: 200px;
-    height: 100px;
-    top: -5px;
-    left: -70px;  
-    position: relative;
-
-}
-.border-border h3{
-    position: absolute;
-    z-index: 2;
-    background-color:#fff;
-    width: 250px;
-    height: 60px;
-    right: -150px;
-    bottom: 15px;
+    gap: 10px;
+    padding-left: 20px;
 }
 
-/* END CONTENT ABOUT */
-.module-room a , .module-food a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #333;
-    border-bottom: 3px double;
-    /* font-size: 50px; */
+.sub-home, .us-us{
+    font-weight: 100;
+    
 }
-.module-room h2, .module-food h2{
+.sub-about-us .home-page{
+    padding-left: 20px;
+}
+.home-page .us-us{
+    color: #a1731d;
+}
+.sub-about-us{
+    margin-bottom: 15px ;
+}
+
+
+/*  */
+.sub-single-room{
+    padding: 10px 40px;   
+}
+.title-single-room{
+    display: flex;
+    width: 100%;
+    background-color: #eae9e9;
+    /* border: 1px solid red; */
+    padding: 10px 30px;
     margin-bottom: 10px;
-    padding-bottom: 10px;
-    position: relative;
-    font-size: 30px;
-    font-weight: 600;
-    padding-top: 34px;
-    text-align: center;
+    border-radius: 10px;
+
+}
+.title-single-room .sort-by-room{
+    display: flex;
+    flex: 1;
+    gap: 5px;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+.title h1{
+    font-size: 16px;
     text-transform: uppercase;
 }
+.sub-sort-by h4{
+    font-weight: 500;
+}
+.sort-by svg{
+    color: rgb(125, 119, 148);
+}
+.title-single-room .title{
+    align-items: center;
+}
+.sort-list{
+    display: none;
+}
+
+
+
+
+
+
 /* start section room */
 .section-room .container{
-    background-color: #ece9e9;
+    /* background-color: #ece9e9;
+    padding: 0px 30px; */
+    margin-bottom: 30px;
+
 }
-.section-room-double .container{
+/* .section-room-double .container{
     background-color: #ece9e9;
-}
+} */
 /* .item-product-room .item-product-img{
     background-color: #fff;
 } */
@@ -333,9 +334,7 @@ body{
     gap: 20px;
     /* background-color: #fff; */
     justify-content: center;
-    box-shadow: 5px 5px #333;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px 20px;
 }
 .col-display-room .item-product-img img{
     width: 280px;
@@ -344,6 +343,7 @@ body{
 .col-display-room .alter-item-product-room{
     border: 1px solid #a9a8a8;
     background-color: #fff;
+    box-shadow: 5px rgba(120, 118, 118, 0.1);
     
 }
 .tag-room .name-room a{
@@ -398,6 +398,7 @@ body{
 } */
 .product-infor-room .btn-booking{
     text-decoration: none;
+    text-align: center;
     color: #fff;
     display: block;
     background-color: #c40025;
@@ -410,153 +411,17 @@ body{
     color: #c40025;
     font-weight: 500;
     font-size: 15px;
-    width: 100%;
     padding: 5px;
+
 }
 .price-room{
     width: 120px;
     display: flex;
     align-items: center;
 }
-/* .section-room-double .row-display-room{
-    margin-bottom: 50px;
-} */
-    /* phòng vip */
 
-.infor-room-vip{
-    width: 450px;
-    padding: 10px;
-}
-.infor-room-vip .infor-room{
-    display: flex;
-    padding: 10px;
-    /* justify-content: space-between;
-    align-items: center; */
-    /* gap: 130px; */
-}
-.row-display-room-vip .room-single{
-    border: 1px solid #9e9c9c;
-    /* box-shadow: 10px rgba(0, 0, 0, 0.3); */
-} 
-.infor-room .tag-review{
-    display: flex;
-    flex: 1;
-}
-.infor-room .list-tag-room{
-    display: flex;
-    gap: 15px;
-}
-.infor-room .tag-room{
-    flex:1;
-}
-.infor-room-vip .content-room  {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    line-height: 1.7;
-    font-size: 10 px;
-    /* padding-right: 50px; */
-}
-/* .row-display-room-vip .item-product-img{
-    padding: 0px 10px;
-} */
-.section-room-vip .module-room h2{
-    text-transform: uppercase;
-}
-.section-room-vip .container{
-    background-color: #fff;
-    padding: 40px;
-}
-.tag-review .area-room{
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.container .row-display-room-vip{
-    display: flex;
-}
 
-.btn-book-room {
-    border: 1px solid #333;
-    width: 250px;
-    /* height: 45px; */
-    background-color: #c40025;
-    font-size: 14px;
-    padding: 10px 16px;
-    color: #fff;
-    cursor: pointer;
-}
 
-/* four room vip */
-.four-room-vip .item-room-vip {
-    display: flex;
-    padding: 0px 10px;
-    flex-direction: row;
-    gap: 20px;
-
-}
-.col-room-vip .img-room-vip{
-    gap: 20px;
-    margin-bottom: 10px;
-}
-.item-room-vip .col-room-vip{
-    padding: 0px 10px;
-}
-.col-room-vip .name-price-room{
-    display: flex;
-    gap: 70px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.name-price-room .price{
-    background-color: #c40025;
-    width: 120px;
-    padding: 10px;
-    text-align: center;
-}
-/* .four-room-vip .col-room-vip{
-    border: 1px solid red;
-} */
- /* end phòng vip */
-/* end section room */
-/* start food */
-.section-food .container{
-    padding: 40px;
-}
-.container .vn-food{
-    display: flex;
-    gap: 20px;
-}
-.vn-food .row-food{
-    border: 1px solid #9e9c9c;
-    margin-bottom: 20px ;
-    /* box-shadow: 5px rgba(0, 0, 0, 0.1); */
-}
-.row-food .name-price-food{
-    padding: 10px;
-}
-.name-price-food .name-food{
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 400;
-    color: #333;
-}
-.name-price-food .price-food{
-    background-color: #c40025;
-    /* width: 100px;
-    height: 50px; */
-}
-.see-more-food .more{
-    text-align: center;
-    padding: 20px;
-    background-color: #a1731d;
-    color: #fff;
-    font-weight: 100;
-}
-/* end food */
 /* start footer */
 .footer .container{
     position: relative;
@@ -680,9 +545,3 @@ body{
 .new-text{
     padding: 0px 20px;
 }
-
-
-
-
-
-/* end */

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/phongdoi.css">
+    <title>Phòng đôi</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-content">
+                <h2>Chào mừng bạn đến với Anh Thi Hotel</h2>
+            </div>
+            <ul class="menu-list">
+                <li title="đăng ký">Đăng ký</li>
+                <li title="đăng nhập">Đăng nhập</li>
+                <li class="search-header" title="tìm kiếm">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                    Tìm kiếm 
+                    <div class="click-search" >
+                        <input class="input-search" type="text" placeholder="Nhập từ khóa tìm kiếm">
+                        <div class="key-popular">
+                            <h1 class="title-key-popular">Từ khóa phổ biến</h1>
+                            <ul class="room-popular">
+                                <li>Phòng đơn</li>
+                                <li>Phòng đôi</li>
+                                <li>Phòng vip</li>
+                                <li>Hội nghị</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="book-room" title="đặt phòng">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                  </svg>   
+                Đặt phòng  
+            </div>
+        </div>
+        <!-- manin header-->
+        <div class="main-header">
+            <div class="logo-header">
+                <img width="250" height="140" src="/assets/img/2984828-01.png" alt="ảnh logo">
+            </div>
+            <div class="nav-header">
+                <ul class="nav">
+                    <li>Trang chủ</li>
+                    <li>Về chúng tôi</li>
+                    <li>
+                        <div class="subnav-room">Phòng
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            <ul class="room-list">
+                                <li>Phòng đơn</li>
+                                <li>Phòng đôi</li>
+                                <li>Phòng vip</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subnav-food">Ẩm thực
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            <ul class="food-list">
+                                <li>Món ăn</li>
+                                <li>Đồ uống</li>
+                                <li>Bánh ngọt</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Dịch vụ</li>
+                    <li>Thư viện ảnh</li>
+                    <li>Liên hệ</li>
+                </ul>
+            </div>
+        </div>
+        <!-- end main header -->
+    </header>
+    <div class="body-paper">
+        <section class="about-us">
+            <div class="container">
+                <div class="sub-about-us">
+                    <ul class="home-page">
+                        <li>
+                           <div class="home-svg"> 
+                                <h3 class="sub-home">Trang chủ</h3>
+                                <span class="svg-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>     
+                                </span>
+
+                           </div>
+                        </li>
+                        <li>
+                            <strong>
+                                <h3 class="us-us">Phòng đôi</h3>
+                            </strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="container-single-room">
+            <div class="single-room">
+                <div class="sub-single-room">
+                    <div class="title-single-room">
+                        <div class="title">
+                            <h1>Phòng đôi</h1>
+                        </div>
+                        <div class="sort-by-room">
+                            <div class="sub-sort-by">
+                                <h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12" />
+                                      </svg>
+                                  Sắp xếp:   
+                                </h4>
+                            </div>
+                            <div class="sort-by">Mặc định
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                                <ul class="sort-list">
+                                    <li>Mặc định</li>
+                                    <li>Z -> A</li>
+                                    <li>A -> Z</li>
+                                    <li>Gía tăng dần</li>
+                                    <li>Gía giảm dần</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-room-double"> 
+            <div class="container">
+                <div class="row-display-room">
+                    <div class="col-display-room">
+                        <!-- room 1 -->
+                        <div class="alter-item-product-room">
+                            <div class="item-product-img">
+                                <a href="/phong-doi-tieu-chuan">
+                                    <img width="330" height="230" src="/assets/img/anh_don_view_dep.webp" alt="Phòng đôi tiêu chuẩn">
+                                </a>
+                            </div>
+                            <div class="infor-room">
+                                <div class="tag-room">
+                                    <h3 class="name-room"><a href="/phong-doi-tieu-chuan">Phòng đôi tiêu chuẩn</a></h3>
+                                    <ul class="img-list-tag-room">
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150" alt="Cafe buổi sáng">
+                                         </li>
+                                         <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150" alt="Gọi đồ ăn tại phòng">
+                                          </li>
+                                          <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150" alt="Bếp nấu tại phòng">
+                                         </li>
+                                         <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150" alt="Bồn tắm hoa sen">
+                                         </li>
+                                         <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150" alt="Internet không dây">
+                                         </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-review-room">
+                                    <ul class="list-tag-review">
+                                        <li>02 khách</li>
+                                        <li>25m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-infor-room">
+                                    <div class="price-room">
+                                        <span class="price">950.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a class="btn-booking" href="/phong-doi-tieu-chuan" >Đặt phòng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- room 2 -->
+    
+                        <div class="alter-item-product-room">
+                            <div class="item-product-img">
+                                <a href="/phong-doi-view-thanh-pho">
+                                    <img width="330" height="230" src="/assets/img/anh_don_view_dep.webp" alt="Phòng đôi view thành phố">
+                                </a>
+                            </div>
+                            <div class="infor-room">
+                                <div class="tag-room">
+                                    <h3 class="name-room"><a href="/phong-doi-view-thanh-pho">Phòng đôi view thành phố</a></h3>
+                                    <ul class="img-list-tag-room">
+                                        <li>
+                                           <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150" alt="Cafe buổi sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150" alt="Gọi đồ ăn tại phòng">
+                                         </li>
+                                         <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150" alt="Bếp nấu tại phòng">
+                                         </li>
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150" alt="Bồn tắm hoa sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150" alt="Internet không dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-review-room">
+                                    <ul class="list-tag-review">
+                                        <li>02 khách</li>
+                                        <li>30m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-infor-room">
+                                    <div class="price-room">
+                                        <span class="price">1.100.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a class="btn-booking" href="/phong-doi-view-thanh-pho" >Đặt phòng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- room 3 -->
+    
+                        <div class="alter-item-product-room">
+                            <div class="item-product-img">
+                                <a href="/phong-doi-view-san-vuon">
+                                    <img width="330" height="230" src="/assets/img/anh_don_view_dep.webp" alt="Phòng đôi view sân vườn">
+                                </a>
+                            </div>
+                            <div class="infor-room">
+                                <div class="tag-room">
+                                    <h3 class="name-room"><a href="/phong-doi-view-san-vuon">Phòng đôi view sân vườn</a></h3>
+                                    <ul class="img-list-tag-room">
+                                        <li>
+                                           <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150" alt="Cafe buổi sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150" alt="Gọi đồ ăn tại phòng">
+                                         </li>
+                                         <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150" alt="Bếp nấu tại phòng">
+                                         </li>
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150" alt="Bồn tắm hoa sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150" alt="Internet không dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-review-room">
+                                    <ul class="list-tag-review">
+                                        <li>02 khách</li>
+                                        <li>30m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-infor-room">
+                                    <div class="price-room">
+                                        <span class="price">1.200.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a class="btn-booking" href="/phong-doi-view-san-vuon" >Đặt phòng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- room 4 -->
+    
+                        <div class="alter-item-product-room">
+                            <div class="item-product-img">
+                                <a href="/phong-doi-2-giuong-doi">
+                                    <img width="330" height="230" src="/assets/img/anh_don_view_dep.webp" alt="Phòng đôi 2 giường đôi">
+                                </a>
+                            </div>
+                            <div class="infor-room">
+                                <div class="tag-room">
+                                    <h3 class="name-room"><a href="/phong-doi-2-giuong-doi">Phòng đôi 2 giường đôi</a></h3>
+                                    <ul class="img-list-tag-room">
+                                        <li>
+                                           <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150" alt="Cafe buổi sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150" alt="Gọi đồ ăn tại phòng">
+                                         </li>
+                                         <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150" alt="Bếp nấu tại phòng">
+                                         </li>
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150" alt="Bồn tắm hoa sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150" alt="Internet không dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-review-room">
+                                    <ul class="list-tag-review">
+                                        <li>04 khách</li>
+                                        <li>32m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-infor-room">
+                                    <div class="price-room">
+                                        <span class="price">1.500.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a class="btn-booking" href="/phong-doi-2-giuong-doi" >Đặt phòng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+       <!-- start footer -->
+<div class="footer">
+    <div  class="container">
+        <div class="background-footer">  
+            <img width="1263" height="800" src="/assets/img/background-footer.jpg" alt="anh background-footer">
+            <div class="sub-background"></div>
+        </div>
+        <div class="top-footer">
+            <div class="hotline-helpful">
+                <div class="sub-hotline">
+                    <h3>Hotline hỗ trợ</h3>
+                </div>
+                <div class="phone-help">
+                    <a href="/hotline">0935177801</a>
+                </div>
+            </div>
+            <div class="email-helpful">
+                <div class="sub-suport">
+                    <h3>Email hỗ trợ</h3>
+                </div>
+                <div class="sub-email">
+                    <a href="/mail">trananhthi256@gmail.com</a>
+                </div>
+            </div>
+            <div class="input-recive-message">
+                <div class="sub-input">
+                    <h3>Đăng ký nhận tin</h3>
+                </div>
+                <div class="input-infor">
+                    <input type="text" placeholder="Email của bạn">
+                    <button>Đăng ký</button>
+                </div>
+            </div>
+            <div class="connect-us">
+                <div class="sub-connect-us">
+                    <h3>Kết nối với chúng tôi</h3>
+                </div>
+                <div class="icon-connect">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mid-footer">
+            <div class="showroom-footer">
+                <div class="svg-showroom">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                    </svg>     
+                    <h3 class="showroom-system" title="hệ thống chi nhánh">Hệ thống chi nhánh </h3>                 
+                </div>
+            </div>
+            <div class="section-row-showroom">
+                <div class="row-showroom">
+                    <div class="sub-row-showroom">
+
+                        <div class="icon-locate">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                              </svg>                          
+                        </div>
+                        <div class="text-showroom">
+                            <p class="text-p">Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                            <p>Hotline : <a href="/hotline">0666663834</a></p>
+                        </div>
+                    </div>
+
+                    <div class="sub-row-showroom">
+                        <div class="icon-locate">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                              </svg>                          
+                        </div>
+                        <div class="text-showroom">
+                            <p class="text-p">Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                            <p>Hotline : <a href="/hotline">0666663834</a></p>
+                        </div>
+                    </div>
+
+                    <div class="sub-row-showroom">
+                        <div class="icon-locate">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                              </svg>                          
+                        </div>
+                        <div class="text-showroom">
+                            <p class="text-p">Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                            <p>Hotline : <a href="/hotline">0666663834</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row-showroom">
+                    <div class="sub-row-showroom">
+
+                        <div class="icon-locate">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                              </svg>                          
+                        </div>
+                        <div class="text-showroom">
+                            <p class="text-p">Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                            <p>Hotline : <a href="/hotline">0666663834</a></p>
+                        </div>
+                    </div>
+
+                    <div class="sub-row-showroom">
+                        <div class="icon-locate">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                              </svg>                          
+                        </div>
+                        <div class="text-showroom">
+                            <p class="text-p">Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                            <p>Hotline : <a href="/hotline">0666663834</a></p>
+                        </div>
+                    </div>
+
+                    <div class="sub-row-showroom">
+                        <div class="icon-locate">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                              </svg>                          
+                        </div>
+                        <div class="text-showroom">
+                            <p class="text-p">Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                            <p>Hotline : <a href="/hotline">0666663834</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+            <!-- bottom footer -->
+
+        <div class="bottom-footer">
+                <div class="text-img-footer">
+                    <div class="logo-footer">
+                       <img width="250" height="140" src="/assets/img/2984828-01.png" alt="ảnh logo">
+                    </div>
+                    <div class="text-bottom">
+                        <p>Nằm ở trung tâm thành phố và nhiều thành phố khác. Chúng tôi cung cấp chỗ nghỉ thanh lịch và đầy phong cách với truy cập Wifi miễn phí trong các khu vực chung. Khách sạn có lễ tân 24 giờ, hồ bơi trong nhà, trung tâm thể dục và bãi đỗ xe miễn phí trong khuôn viên. </p>
+                     </div>
+                </div>
+                <div class="new-text">
+                    <div class="title-text-bottom">
+                        <h4>Bài viết mới</h4>
+                    </div>
+                    <div class="list-post-new">
+                        <ul class="list-new">
+                            <li class="infor-post">
+                                <div class="item-post">
+                                    <div class="enti-new">
+                                        <a href="/">10 xu hướng thịnh hành trong ngành khách sạn 2022</a>
+                                    </div>
+                                    <p class="post-day">Ngày đăng 13/3/2023</p>
+                                </div>
+                            </li>
+    
+                            <li class="infor-post">
+                                <div class="item-post">
+                                    <div class="enti-new">
+                                        <a href="/">Những điều kiêng kị khi ở khách sạn mà bạn nên biết</a>
+                                    </div>
+                                    <p class="post-day">Ngày đăng 13/3/2023</p>
+                                </div>
+                            </li>
+                             
+                            <li class="infor-post">
+                                <div class="item-post">
+                                    <div class="enti-new">
+                                        <a href="/">Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng</a>
+                                    </div>
+                                    <p class="post-day">Ngày đăng 13/3/2023</p>
+                                </div>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div>
+    
+                <div class="policy-suport">
+                    <div class="title-policy">
+                        <h4>Chính sách</h4>
+                    </div>
+                    <div class="policy-p">
+                        <ul>
+                            <li class="li-menu">
+                                <a title="chính sách nhận phòng" href="/chinh-sach-nhan-phong">Chính sách nhận phòng</a>
+                            </li>
+                            <li class="li-menu">
+                                <a title="chính sách trả phòng" href="/chinh-sach-tra-phong">Chính sách trả phòng</a>
+                            </li>
+                            <li class="li-menu">
+                                <a title="chính sách thanh toán" href="/chinh-sach-thanh-toan">Chính sách thanh toán</a>
+                            </li>
+                            <li class="li-menu">
+                                <a title="chính sách bảo mật" href="/chinh-sach-bao-mat">Chính sách bảo mật</a>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div>
+    
+                <div class="formal-pay">
+                    <div class="title-formal-pay">
+                        <h4>Hình thức thanh toán</h4>
+                    </div>
+                    <div class="img-pay">
+                        <img src="/assets/img/icon_check_out.webp" alt="">
+    
+                    </div>
+                    
+                </div>
+            
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
