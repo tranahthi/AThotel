@@ -85,19 +85,6 @@ body{
 }
 
 .click-search {
-    /* position: absolute;
-    color: black;
-    border: 1px solid red;
-    bottom: -255px;
-    width: 900px; */
-    /* height: 220px; */
-    /* right: 158px;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    background-color: #fff;
-    width: 100%;
-    display: none; */
     padding: 3px 50px;
     position: absolute;
     top: 30px;
@@ -150,13 +137,6 @@ body{
     font-size: 25px;
     color: #cd9a2b;
 }
-/* .menu-list, .search-header, .book-room:hover{
-    color: #fff;
-    cursor: pointer;
-
-} */
-
-
  /* MAIN HEADER */
 .main-header{
     display: flex;
@@ -201,13 +181,29 @@ body{
     position: relative;
 
 }
-.nav .room-list ,.nav .food-list{
+.nav .room-list{
     display:none;
     background-color: #fff;
     position:absolute;
-    top: 55px;
-    right: 3px;
+    top: 60px;
+    right: -100px;
     /* display: inline-block; */
+}
+.nav .food-list{
+    display:none;
+    background-color: #fff;
+    position:absolute;
+    top: 60px;
+    /* right: -100px; */
+    left: -3px;
+
+}
+.room-list{
+    width: 200px;
+}
+.food-list{
+    width: 200px;
+
 }
 
 /* END MAIN HEADER */
@@ -323,9 +319,12 @@ body{
 .section-room-double .container{
     background-color: #ece9e9;
 }
-/* .item-product-room .item-product-img{
-    background-color: #fff;
-} */
+.item-product-room .item-product-img{
+    width: 100%;
+}
+.item-product-img img{
+    width: 100%;
+}
 
 .row-display-room .col-display-room{
     display: flex;
@@ -436,6 +435,7 @@ body{
 }
 .row-display-room-vip .room-single{
     border: 1px solid #9e9c9c;
+    flex: 1;
     /* box-shadow: 10px rgba(0, 0, 0, 0.3); */
 } 
 .infor-room .tag-review{
@@ -476,6 +476,8 @@ body{
 }
 .container .row-display-room-vip{
     display: flex;
+    width: 100%;
+    gap: 30px;
 }
 
 .btn-book-room {
@@ -492,9 +494,11 @@ body{
 /* four room vip */
 .four-room-vip .item-room-vip {
     display: flex;
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     flex-direction: row;
     gap: 20px;
+    width: 100%;
+    flex: 2;
 
 }
 .col-room-vip .img-room-vip{
@@ -502,7 +506,7 @@ body{
     margin-bottom: 10px;
 }
 .item-room-vip .col-room-vip{
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
 }
 .col-room-vip .name-price-room{
     display: flex;
@@ -516,11 +520,15 @@ body{
     padding: 10px;
     text-align: center;
 }
+
 /* .four-room-vip .col-room-vip{
     border: 1px solid red;
 } */
  /* end phòng vip */
 /* end section room */
+
+
+
 /* start food */
 .section-food .container{
     padding: 40px;
@@ -651,7 +659,31 @@ body{
     margin-bottom: 10px;
 }
 
-/* bottom-footer */
+
+
+ /* * bottom-footer */ 
+.text-img-footer {
+    /* border: 1px solid green; */
+    height: 100%;
+}
+.new-text{
+    /* border: 1px solid green; */
+    height: 100%;
+    padding-top: 50px;
+}
+.policy-suport{
+    /* border: 1px solid green; */
+    height: 100%;
+    padding-top: 50px;
+}
+.formal-pay{
+    /* border: 1px solid green; */
+    height: 100%;
+    padding-top: 50px;
+}
+
+
+
 .bottom-footer {
     display: flex;
     position: absolute;
@@ -659,13 +691,24 @@ body{
     left: 10px;
     z-index: 2;
     color: #fff;
-    align-items: center;
-    padding: 0px 20px;
+    gap: 10px;
+    /* align-items: center; */
+    padding-left:20px;
+    /* border: 1px solid red; */
 }
 
+.logo-footer{
+    /* border: 1px solid red; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 .bottom-footer .text-img-footer{
     padding: 30px;
     width: 350px;
+    /* border: 1px solid red; */
 }
 .bottom-footer h4{
     text-transform:uppercase ;
@@ -677,10 +720,24 @@ body{
     color: #fff;
     margin-bottom: 10px;
 }
-.new-text{
-    padding: 0px 20px;
+.list-new{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.list-policy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
+
+.item-post p{
+    font-style:italic ;
+    color: #f3ddb7;
+
+}
+ 
 
 
 
