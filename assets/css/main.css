@@ -49,9 +49,17 @@ body{
     align-items: center;
     cursor: pointer;
 }
-.header-top .menu-list li:hover{
+.header-top .menu-list .search-header:hover{
     color: #f0dbb3;
 }
+.header-top .menu-list li a:hover{
+    color: #f0dbb3;
+}
+.menu-list a{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .search-header {
     display: flex;
@@ -164,7 +172,7 @@ body{
     color: #333;
     /* position: relative; */
 }
-.nav-header .nav li:hover{
+.nav-header .nav li a:hover{
     color: #cd932b;
     background-color: #fff;
     cursor: pointer;
@@ -203,7 +211,11 @@ body{
 }
 .food-list{
     width: 200px;
+}
 
+.nav a{
+    text-decoration: none;
+    color: #333;
 }
 
 /* END MAIN HEADER */
@@ -436,7 +448,8 @@ body{
 .row-display-room-vip .room-single{
     border: 1px solid #9e9c9c;
     flex: 1;
-    /* box-shadow: 10px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 14px 28px rgba(135, 135, 135, 0.25),
+        0 10px 10px rgba(131, 131, 131, 0.25);
 } 
 .infor-room .tag-review{
     display: flex;
@@ -481,7 +494,8 @@ body{
 }
 
 .btn-book-room {
-    border: 1px solid #333;
+    border: 1px solid #d6d5d5;
+    margin-top:80px;
     width: 250px;
     /* height: 45px; */
     background-color: #c40025;
@@ -489,6 +503,9 @@ body{
     padding: 10px 16px;
     color: #fff;
     cursor: pointer;
+}
+.btn-book-room:hover{
+    background-color:#ec042e ;
 }
 
 /* four room vip */
@@ -519,6 +536,11 @@ body{
     width: 120px;
     padding: 10px;
     text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.name-price-room .price:hover{
+    background-color: #ec042e;
 }
 
 /* .four-room-vip .col-room-vip{
@@ -538,12 +560,14 @@ body{
     gap: 20px;
 }
 .vn-food .row-food{
-    border: 1px solid #9e9c9c;
+    border: 1px solid #d4d2d2;
     margin-bottom: 20px ;
-    /* box-shadow: 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 14px 28px rgba(184, 183, 183, 0.25),
+        0 10px 10px rgba(196, 195, 195, 0.25);
 }
 .row-food .name-price-food{
-    padding: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
 }
 .name-price-food .name-food{
     margin-bottom: 10px;
@@ -554,10 +578,15 @@ body{
 }
 .name-price-food .price-food{
     background-color: #c40025;
-    /* width: 100px;
-    height: 50px; */
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.name-price-food .price-food:hover{
+    background-color: #f40531;
 }
 .see-more-food .more{
+    width: 50%;
     text-align: center;
     padding: 20px;
     background-color: #a1731d;
@@ -565,6 +594,10 @@ body{
     font-weight: 100;
 }
 /* end food */
+
+
+
+
 /* start footer */
 .footer .container{
     position: relative;

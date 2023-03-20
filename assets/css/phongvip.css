@@ -278,112 +278,155 @@ body{
 }
 
 
-
-/* form đăng ký tài khoản */
-/* form {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-   */
-.form-login{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*  */
+.sub-single-room{
+    padding: 10px 40px;   
 }
- 
-
- .sub-form{
+.title-single-room{
+    display: flex;
+    width: 100%;
+    background-color: #eae9e9;
     /* border: 1px solid red; */
-    background-color: #FFFFFF;
-    padding: 10px 40px;
-    width: 430px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 0 14px 28px rgba(135, 135, 135, 0.25),
-        0 10px 10px rgba(131, 131, 131, 0.25);
-  
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
 }
-.sub-form h2 {
-    text-align: center;
-    color: #be9d06;
+.title-single-room .sort-by-room{
+    display: flex;
+    flex: 1;
+    gap: 5px;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+    align-items: center;
 }
-  
-.auth-form-group {
-    margin-bottom: 20px;
+.title h1{
+    font-size: 16px;
+    text-transform: uppercase;
 }
-input[type="email"],
-input[type="password"]{
-    display: block;
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.sub-sort-by h4{
+    font-weight: 500;
+}
+.sort-by svg{
+    color: rgb(125, 119, 148);
+}
+.title-single-room .title{
+    align-items: center;
+}
+.sort-list{
+    display: none;
 }
 
-  button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #d6af11;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* button[type="submit"]:hover {
-        color: #df9f0b;
-  } */
-  
-  .social-login {
-    text-align: center;
-  }
-  .social-login p{
-    margin-bottom: 10px;
-  }
-  
-  .btn-facebook,
-  .btn-google {
-    display: inline-block;
-    padding: 10px 20px;
+
+
+
+
+
+/* start section room */
+.section-room .container{
+    /* background-color: #ece9e9;
+    padding: 0px 30px; */
+    margin-bottom: 30px;
+
+}
+/* .section-room-double .container{
+    background-color: #ece9e9;
+} */
+/* .item-product-room .item-product-img{
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .btn-facebook:hover{
-    background-color: blue;
-  }
-  .btn-google:hover{
-    background-color: red;
-  }
-  
-  .login-link {
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .login-link a {
-    color: #c7b40d;
-  }
-  .fb-gg a{
+} */
+
+.row-display-room .col-display-room{
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    /* background-color: #fff; */
+    justify-content: center;
+    padding: 20px 20px;
+}
+.col-display-room .item-product-img img{
+    width: 280px;
+    height: 180px;
+}
+.col-display-room .alter-item-product-room{
+    border: 1px solid #a9a8a8;
+    background-color: #fff;
+    box-shadow: 5px rgba(120, 118, 118, 0.1);
+    
+}
+.tag-room .name-room a{
+    align-items: center;
     text-decoration: none;
-    color: #fff;
-  }
-  .btn-facebook{
-    background-color: rgb(60, 60, 224);
-  }
-.btn-google{
-    background-color: rgb(232, 72, 72);
-    padding:10px 25px ;
+}
+.tag-room .img-list-tag-room{
+    display: flex;
+    border-bottom: double;
 }
 
+.tag-room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infor-room .img-list-tag-room{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.alter-item-product-room .infor-room .name-room {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.infor-room .name-room a{
+    color: #1a1a1a;
+}
+.tag-review-room .list-tag-review{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    gap: 10px;
+}
+.product-infor-room{
+    display: flex;
+    gap: 55px;
+    margin-top: 17px;
+    margin-bottom: 5px;
+}
+/* .btn-booking{
+    margin-right: 5px;
+    margin-bottom: 5px; 
+} */
+.product-infor-room .btn-booking{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    background-color: #c40025;
+    width: 100px;
+    height: 40px;
+    padding: 10px 15px;
+
+}
+.product-infor-room .price{
+    color: #c40025;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px;
+
+}
+.price-room{
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -559,4 +602,5 @@ input[type="password"]{
     color: #f3ddb7;
 
 }
+ 
  

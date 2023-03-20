@@ -49,9 +49,17 @@ body{
     align-items: center;
     cursor: pointer;
 }
-.header-top .menu-list li:hover{
+.header-top .menu-list .search-header:hover{
     color: #f0dbb3;
 }
+.header-top .menu-list li a:hover{
+    color: #f0dbb3;
+}
+.menu-list a{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .search-header {
     display: flex;
@@ -85,19 +93,6 @@ body{
 }
 
 .click-search {
-    /* position: absolute;
-    color: black;
-    border: 1px solid red;
-    bottom: -255px;
-    width: 900px; */
-    /* height: 220px; */
-    /* right: 158px;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    background-color: #fff;
-    width: 100%;
-    display: none; */
     padding: 3px 50px;
     position: absolute;
     top: 30px;
@@ -150,13 +145,6 @@ body{
     font-size: 25px;
     color: #cd9a2b;
 }
-/* .menu-list, .search-header, .book-room:hover{
-    color: #fff;
-    cursor: pointer;
-
-} */
-
-
  /* MAIN HEADER */
 .main-header{
     display: flex;
@@ -184,7 +172,7 @@ body{
     color: #333;
     /* position: relative; */
 }
-.nav-header .nav li:hover{
+.nav-header .nav li a:hover{
     color: #cd932b;
     background-color: #fff;
     cursor: pointer;
@@ -223,7 +211,11 @@ body{
 }
 .food-list{
     width: 200px;
+}
 
+.nav a{
+    text-decoration: none;
+    color: #333;
 }
 
 /* END MAIN HEADER */
