@@ -154,7 +154,8 @@ body{
 }
 .main-header img{
     width: 200px;
-    height: 90px;
+    height: 180px;
+    padding-top: 16px;
 }
 .nav-header .nav{
     display: flex;

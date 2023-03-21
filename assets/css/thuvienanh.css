@@ -154,7 +154,8 @@ body{
 }
 .main-header img{
     width: 200px;
-    height: 90px;
+    height: 180px;
+    padding-top: 16px;
 }
 .nav-header .nav{
     display: flex;
@@ -309,9 +310,25 @@ body{
     
 }
 .sub-library-img img{
-  
+    /* -webkit-transition:all 0.5s ease-out;
+ -moz-transition:all 0.5s ease-out;
+ -ms-transition:all 0.5s ease-out;
+ -o-transition:all 0.5s ease-out;
+ transition:all 0.5s ease-out;
+     */
+
+     transform: scale(1);
+     transition: all 0.5s;
     border-radius:20px;
 }
+ .sub-library-img img:hover {
+    transform: scale(1.1);
+ /* -webkit-transform:rotate(360deg);
+ -moz-transform:rotate(360deg);
+ -ms-transform:rotate(360deg);
+ -o-transform:rotate(360deg);
+ transform:rotate(360deg); */
+ }
 
 
 
