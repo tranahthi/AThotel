@@ -178,32 +178,35 @@ body{
     cursor: pointer;
 }
 .nav li:hover .room-list ,.nav li:hover .food-list {
-    display: block;
+    visibility: visible;
 }
-
 .subnav-room svg ,.subnav-food svg{
     width: 13px;
 }
+
 .nav li{
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
 
 }
 .nav .room-list{
-    display:none;
+    visibility: hidden;
     background-color: #fff;
     position:absolute;
     top: 60px;
     right: -100px;
+    transition: all 0.2s;
     /* display: inline-block; */
 }
 .nav .food-list{
-    display:none;
+    visibility: hidden;
     background-color: #fff;
     position:absolute;
     top: 60px;
     /* right: -100px; */
     left: -3px;
+    transition: all 0.2s;
+
 
 }
 .room-list{
@@ -220,6 +223,8 @@ body{
 
 /* END MAIN HEADER */
 /* END HEADER */
+
+
 /* SLIDER*/
 .picture-slider img{
     max-width: 100%;
@@ -586,12 +591,18 @@ body{
     background-color: #f40531;
 }
 .see-more-food .more{
-    width: 50%;
+    width: 15%;
     text-align: center;
     padding: 20px;
     background-color: #a1731d;
     color: #fff;
     font-weight: 100;
+}
+.see-more-food{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }
 /* end food */
 
