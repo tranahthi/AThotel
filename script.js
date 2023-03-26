@@ -1,10 +1,18 @@
-const searchNode = document.querySelector('.search-header');
-const clickSearchNode = document.querySelector('.click-search')
-console.log(clickSearchNode)
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
+
+
+
+const loginBtn = $('.login')
+console.log(loginBtn)
+const clickSearchNode = $('.click-search')
+const searchNode = $('.search-header');
+const bookRoom = $('.book-room');
+
 
 searchNode.addEventListener('click', () => {
-    clickSearchNode.style.display = 'block';
-    console.log('hehe')
+  clickSearchNode.style.display = 'block';
+  console.log('hehe')
 })
 
 // const arrowDownRoom = document.querySelector('.arrow-down-room');
@@ -21,9 +29,14 @@ searchNode.addEventListener('click', () => {
 
 //    }
 //    )
-const bookRoom = document.querySelector('.book-room');
-bookRoom.addEventListener('click', ()=> {
-    window.location = `datphong.html`;
+bookRoom.addEventListener('click', () => {
+  window.location = `datphong.html`;
+})
+
+
+loginBtn.addEventListener('click', function login(e) {
+  e.preventDefault()
+  getUser(handleLogin);
 })
 
 
@@ -35,32 +48,28 @@ bookRoom.addEventListener('click', ()=> {
 var apiUser = ' http://localhost:3000/user';
 
 
-function login(){
-  getUser(handleLogin);
 
-}
 
-function getUser(callback){
+function getUser(callback) {
   fetch(apiUser)
-    .then(function(respone){
+    .then(function (respone) {
       return respone.json();
     })
     .then(callback);
 
 }
 
-function handleLogin(data){
+function handleLogin(datas) {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
-  
-  data.forEach(data => {
-    if(data.email == email && data.password == password){
+  datas.forEach(data => {
+    if (data.email == email && data.password == password) {
       alert("dat nhap thanh cong");
       console.log('hi');
-    }      
+    }
+    else {
+      alert("sai mat khau")
+    }
   });
 }
-
-
-
 
