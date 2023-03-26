@@ -1,0 +1,17 @@
+{
+ 
+  "dependencies": {
+ 
+   
+  "firebase": "^9.18.0",
+ 
+   
+  "json-server": "^0.17.3"
+ 
+  },
+ 
+  "scripts": {
+    "start": "json-server --watch db.json"
+ 
+  }
+}

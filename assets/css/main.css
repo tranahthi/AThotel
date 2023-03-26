@@ -101,7 +101,7 @@ body{
     border-top: 0;
     z-index: 2;
     width: 100%;
-    right: 157px;
+    right: 142px;
     display: flex;
     flex-direction: column;
     color: black;
@@ -113,7 +113,7 @@ body{
     padding:10px 30px;
     border: none;
     border-bottom: 1px solid #cd9a2b;
-    width: 500px;
+    width: 400px;
     display: flex;
     margin: 0 auto;
     margin-top: 30px;

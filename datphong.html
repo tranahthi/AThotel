@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/register.css">
-    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="/assets/css/datphong.css">
+    <title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="header-top">
             <div class="header-content">
-                <h2>Chào mừng bạn đến với TDK Hotel</h2>
+                <h2>Chào mừng bạn đến với Anh Thi Hotel</h2>
             </div>
             <ul class="menu-list">
                 <li title="đăng ký"><a href="register.html">Đăng ký</a></li> 
@@ -60,7 +60,7 @@
                             <ul class="room-list">
                                 <li><a href="phongdon.html">Phòng đơn</a></li>
                                 <li><a href="phongdoi.html">Phòng đôi</a></li>
-                                <li><a href="phongvip.html">Phòng đôi</a></li>
+                                <li><a href="phongvip.html">Phòng vip</a></li>
                             </ul>
                         </div>
                     </li>
@@ -86,75 +86,94 @@
         <!-- end main header -->
     </header>
      <!--End header  -->
+
     <div class="body-paper">
         <section class="about-us">
             <div class="container">
                 <div class="sub-about-us">
                     <ul class="home-page">
                         <li>
-                           <div class="home-svg"> 
+                            <div class="home-svg">
                                 <h3 class="sub-home">Trang chủ</h3>
-                                <span class="svg-svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                    </svg>     
-                                </span>
-
-                           </div>
+                            <span class="svg-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>     
+                            </span>
+    
+                            </div>
                         </li>
                         <li>
                             <strong>
-                                <h3 class="us-us">Đăng ký tài khoản</h3>
+                                <h3 class="us-us">Đặt phòng</h3>
                             </strong>
                         </li>
                     </ul>
+        
                 </div>
             </div>
         </section>
-        <div class="form-register">
-            
-                <form class="sub-form">
-                    <h2>Đăng ký</h2>
-                    <div class="login-link">
-                      <p>Đã có tài khoản, đăng nhập <a href="login.html"> tại đây</a></p>
+        <div class="container-title-book-room">
+            <div class="sub-title-book-room">
+                <h2><a href="#">Đặt phòng</a></h2>
+            </div>
+            <div class="content-form-book-room">
+                <div class="content-book-room">
+                    <div class="sub-image">
+                        <img width="60%" height="350px" src="/assets/img/anh-book-room.jpg" alt="ảnh phòng">
                     </div>
-                    <div class="auth-form-group">
-                      <input type="text" id="fisrtname"  placeholder="Họ" required>
+                    <div class="sub-content">
+                        <p>Để lại thông tin đặt phòng và chúng tôi sẽ liên hệ bạn sớm nhất có thể. Cảm ơn bạn đã tin tưởng chúng tôi. </p>
+                        <br>
+                        <p>TDK Hotel trân trọng!</p>
                     </div>
-                    <div class="auth-form-group">
-                      <input type="text" id="lastname"  placeholder="Tên" required>
-                    </div>
-                    <div class="auth-form-group">
-                      <input type="text" id="email"  placeholder="Email" required>
-                    </div>
-                    <div class="auth-form-group">
-                      <input type="text" id="tel"  placeholder="Số điện thoại" required>
-                    </div>
-                    <div class="auth-form-group">
-                      <input type="text" id="password"  placeholder="Mật khẩu" required>
-                    </div>
-                    <button type="submit" id="register">Đăng ký</button>
-                    <div class="social-login">
-                      <p>Hoặc đăng nhập bằng</p>
-                      <div class="fb-gg">
-                        <a href="#" class="btn-facebook">Facebook</a>
-                        <a href="#" class="btn-google">Google</a>
-                      </div>
-                     
-                    </div>
-                </form> 
-            
+
+                </div>
+                <div class="form-book" style=" width: 50%;display: flex">
+                    <form style="background: rgb(221, 220, 220); width: 100%; height: 330px; border-radius: 10px; padding: 20px ">
+                        <hr style="color: #B88A27; font-size: larger">
+                        <table width="100%">
+                            <tr>
+                                <td><p style="font-size: 18px">Họ và tên*</p></td>
+                                <td><p style="font-size: 18px">Số điện thoại*</p></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="Họ và tên" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
+                                <td><input type="text" placeholder="Số điện thoại" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" ></td>
+                            </tr>
+                            <tr>
+                                <td><p style="font-size: 18px">Ngày nhận*</p></td>
+                                <td><p style="font-size: 18px">Ngày trả*</p></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
+                                <td><input type="date" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
+                            </tr>
+                            <tr>
+                                <td><p style="font-size: 18px">Người lớn*</p></td>
+                                <td><p style="font-size: 18px">Trẻ em*</p></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
+                                <td><input type="number" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" ></td>
+                            </tr>
+                            <tr>
+                                <td><br></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit" style="border-radius: 4px; width: 100%; height: 40px; background-color: #3e8e41"><p style="font-size: 18px">Đặt phòng</p></button> </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+
 
         </div>
 
-
-
-
-
-
-    </div>   
-    
-    
+    </div>
 
     <!-- start footer -->
 <div class="footer">
@@ -400,11 +419,6 @@
 
 
     <script src="script.js"></script>
-    <!-- <script src="register.js"></script> -->
-    
+
 </body>
-  
-  <script src="register.js"></script>
-
-
 </html>

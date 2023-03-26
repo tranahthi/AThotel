@@ -1,0 +1,21 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "firstname": "tran",
+      "lastname": "thi",
+      "email": "trananhthi256@gmail.com",
+      "tel": "0935177801",
+      "password": "123456"
+    },
+
+    {
+      "id": 2,
+      "firstname": "nguyen",
+      "lastname": "viet",
+      "email": "vietnguyen256@gmail.com",
+      "tel": "0772624437",
+      "password": "234567"
+    }
+  ]
+}
