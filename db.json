@@ -15,6 +15,14 @@
       "email": "vietnguyen256@gmail.com",
       "tel": "0772624437",
       "password": "234567"
+    },
+    {
+      "firstname": "nguyen",
+      "lastname": "thi",
+      "email": "anhthiabcz@gmail.com",
+      "tel": "0772624437",
+      "password": "12345678",
+      "id": 3
     }
   ]
 }

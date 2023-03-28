@@ -4,8 +4,7 @@ const $$ = document.querySelectorAll.bind(document);
 
 
 const loginBtn = $('.login');
-console.log(loginBtn);
-// const registerBtn = $('.register');
+const registerBtn = $('.register');
 // console.log(registerBtn);
 const clickSearchNode = $('.click-search');
 const searchNode = $('.search-header');
@@ -48,9 +47,16 @@ bookRoom.addEventListener('click', () => {
 
 
 
-loginBtn.addEventListener('click', function login(e) {
+loginBtn&&loginBtn.addEventListener('click', function login(e) {
   e.preventDefault()
   getUser(handleLogin);
+})
+
+registerBtn&& registerBtn.addEventListener('click', function register(e) {
+  e.preventDefault()
+  // createUser(handleRegister);
+  handleRegister();
+
 })
 var apiUser = ' http://localhost:3000/user';
 
@@ -83,12 +89,7 @@ function handleLogin(users) {
 }
 
 
-registerBtn.addEventListener('click', function register(e) {
-  e.preventDefault()
-  // createUser(handleRegister);
-  handleRegister();
 
-})
 
 
 function signUp(){
@@ -106,9 +107,7 @@ function createUser (data) {
   }).then(function(response){
     return response.json();
   }).catch((error) =>console.error(error));
-  if(data){
-    alert('dang ky thanh cong');
-  }
+
 }
 
 
@@ -126,8 +125,8 @@ function handleRegister(){
     tel : tel,
     password : password,
   };
-  console.log(user);
   createUser(user);
+  alert('tao tai khoan thanh cong');
 }
 
 
