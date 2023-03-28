@@ -4,13 +4,14 @@ const $$ = document.querySelectorAll.bind(document);
 
 
 const loginBtn = $('.login');
-console.log(loginBtn);
-// const registerBtn = $('.register');
-// console.log(registerBtn);
+const registerBtn = $('.register');
 const clickSearchNode = $('.click-search');
 const searchNode = $('.search-header');
 const bookRoom = $('.book-room');
 const logoHeader = $('.logo-header');
+
+
+var apiUser = ' http://localhost:3000/user';
 
 
 searchNode.addEventListener('click', () => {
@@ -48,11 +49,15 @@ bookRoom.addEventListener('click', () => {
 
 
 
-loginBtn.addEventListener('click', function login(e) {
+loginBtn && loginBtn.addEventListener('click', function login(e) {
   e.preventDefault()
   getUser(handleLogin);
 })
-var apiUser = ' http://localhost:3000/user';
+registerBtn&& registerBtn.addEventListener('click', function register(e) {
+  e.preventDefault()
+  handleRegister();
+
+})
 
 
 
@@ -83,51 +88,41 @@ function handleLogin(users) {
 }
 
 
-registerBtn.addEventListener('click', function register(e) {
-  e.preventDefault()
-  // createUser(handleRegister);
-  handleRegister();
-
-})
 
 
-function signUp(){
+function signUp() {
   handleRegister();
 }
 
 
-function createUser (data) {
-  fetch(apiUser,{
+function createUser(data) {
+  fetch(apiUser, {
     method: "POST",
     headers: {
-      "Content-Type" : "application/json",  
+      "Content-Type": "application/json",
     },
-    body : JSON.stringify(data),
-  }).then(function(response){
+    body: JSON.stringify(data),
+  }).then(function (response) {
     return response.json();
-  }).catch((error) =>console.error(error));
-  if(data){
-    alert('dang ky thanh cong');
-  }
+  }).catch((error) => console.error(error));
 }
 
 
-function handleRegister(){
-  
+function handleRegister() {
   var firstname = document.getElementById("fisrtname").value;
   var lastname = document.getElementById("lastname").value;
   var email = document.getElementById("email").value;
   var tel = document.getElementById("tel").value;
   var password = document.getElementById("password").value;
   var user = {
-    firstname : firstname,
-    lastname : lastname,
-    email : email,
-    tel : tel,
-    password : password,
+    firstname: firstname,
+    lastname: lastname,
+    email: email,
+    tel: tel,
+    password: password,
   };
-  console.log(user);
   createUser(user);
+  alert("Tạo tài khoản thành công")
 }
 
 
@@ -152,5 +147,5 @@ function handleRegister(){
 
 
 
- 
+
 
