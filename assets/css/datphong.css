@@ -145,6 +145,9 @@ p{
     color: #cd9a2b;
 }
  /* MAIN HEADER */
+ .logo-header{
+    cursor: pointer;
+}
 .main-header{
     display: flex;
     /* border: 1px solid red; */
