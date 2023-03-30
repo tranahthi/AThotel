@@ -23,6 +23,22 @@
       "tel": "0772624437",
       "password": "12345678",
       "id": 3
+    },
+    {
+      "firstname": "nguyen",
+      "lastname": " van viet",
+      "email": "anhthi123@gmail.com",
+      "tel": "099939399",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "firstname": "tran",
+      "lastname": "thi",
+      "email": "anhthiabcz@gmail.com",
+      "tel": "0772624437",
+      "password": "12345678",
+      "id": 5
     }
   ]
 }

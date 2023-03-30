@@ -130,6 +130,9 @@ function handleRegister(){
 }
 
 
+
+
+
 // function handleRegister() {
 //   var registerBtn = document.querySelector('.register');
 //     registerBtn.onclick = function (){
@@ -148,6 +151,9 @@ function handleRegister(){
 //           createUser(user);
 //     }
 // } 
+
+
+
 
 
 

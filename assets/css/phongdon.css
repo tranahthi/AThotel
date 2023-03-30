@@ -421,7 +421,11 @@ body{
     width: 100px;
     height: 40px;
     padding: 10px 15px;
-
+}
+.product-infor-room .btn-booking:hover{
+    background-color:#fff;
+    color: #c40025;
+    border: 1px solid #c40025 ;
 }
 .product-infor-room .price{
     color: #c40025;

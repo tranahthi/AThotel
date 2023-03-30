@@ -429,7 +429,7 @@ body{
     background-color: #c40025;
     width: 100px;
     height: 40px;
-    padding: 10px 15px;
+    padding: 10px 16px; 
 }
 .product-infor-room .btn-booking:hover{
     background-color:#fff;
