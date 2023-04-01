@@ -39,6 +39,14 @@
       "tel": "0772624437",
       "password": "12345678",
       "id": 5
+    },
+    {
+      "firstname": "tran",
+      "lastname": "Linh",
+      "email": "anhthi456@gmail.com",
+      "tel": "0935177800",
+      "password": "123456",
+      "id": 6
     }
   ]
 }

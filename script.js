@@ -14,7 +14,6 @@ const logoHeader = $('.logo-header');
 
 searchNode.addEventListener('click', () => {
   clickSearchNode.style.display = 'block';
-  console.log('hehe');
 })
 
 
@@ -127,6 +126,7 @@ function handleRegister(){
   };
   createUser(user);
   alert('tao tai khoan thanh cong');
+  
 }
 
 
@@ -153,6 +153,14 @@ function handleRegister(){
 // } 
 
 
+function getIsLoginFromLocalStorage() {
+  const isLogin = localStorage.getItem('isLogin');
+  if (isLogin) {
+    return JSON.parse(isLogin);
+  }
+  return false;
+}
+console.log(getIsLoginFromLocalStorage);
 
 
 
