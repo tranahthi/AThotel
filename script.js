@@ -1,3 +1,5 @@
+
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -10,8 +12,6 @@ const clickSearchNode = $('.click-search');
 const searchNode = $('.search-header');
 const bookRoom = $('.book-room'); 
 const logoHeader = $('.logo-header'); 
-
-
 searchNode.addEventListener('click', () => {
   clickSearchNode.style.display = 'block';
 })
@@ -190,10 +190,9 @@ function handleRegister(){
   //   const logoutButton  = document.getElementById("logout");
   //   logoutButton.parentNode.removeChild(logoutButton );
   // }  
-  const handleLogout = document.querySelector("#logout");
+  const logout = document.querySelector("#logout");
   logout.addEventListener("click", () => {
-    // window.location.reload();
-
+    localStorage.clear();
   })
 
   
@@ -204,4 +203,3 @@ function handleRegister(){
 
 
  
-

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/datphong.css">
+    <link rel="stylesheet" href="./assets/css/logout-account.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,8 +15,8 @@
                 <h2>Chào mừng bạn đến với Anh Thi Hotel</h2>
             </div>
             <ul class="menu-list">
-                <li title="đăng ký"><a href="register.html">Đăng ký</a></li> 
-                <li title="đăng nhập"><a href="login.html">Đăng nhập</a></li>
+                <li id="register-Btnn" title="đăng ký"><a href="register.html">Đăng ký</a></li> 
+                <li id="login-Btn" title="đăng nhập"><a href="login.html">Đăng nhập</a></li>
                 <li class="search-header" title="tìm kiếm">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -138,25 +139,25 @@
                                 <td><p style="font-size: 18px">Số điện thoại*</p></td>
                             </tr>
                             <tr>
-                                <td><input type="text" placeholder="Họ và tên" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
-                                <td><input type="text" placeholder="Số điện thoại" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" ></td>
+                                <td><input type="text" placeholder="Họ và tên" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px;border:none;"></td>
+                                <td><input type="text" placeholder="Số điện thoại" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px;border:none" ></td>
                             </tr>
                             <tr>
                                 <td><p style="font-size: 18px">Ngày nhận*</p></td>
                                 <td><p style="font-size: 18px">Ngày trả*</p></td>
                             </tr>
                             <tr>
-                                <td><input type="date" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
-                                <td><input type="date" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
+                                <td><input type="date" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px;border:none"></td>
+                                <td><input type="date" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px;border:none"></td>
                             </tr>
                             <tr>
                                 <td><p style="font-size: 18px">Số người</p></td>
                                 <td><p style="font-size: 18px">Chọn phòng</p></td>
                             </tr>
                             <tr>
-                                <td><input type="number" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
+                                <td><input type="number" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px;border:none"></td>
                                 <td>
-                                    <select type="number" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px">
+                                    <select type="number" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px;border:none">
                                         <option>Phòng đơn tiêu chuẩn</option>
                                         <option> Phòng đơn view thành phố</option>
                                         <option>Phòng đơn view sân vườn</option>
@@ -172,7 +173,7 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><button type="submit" style="border-radius: 4px; width: 100%; height: 40px; background-color: #a1731d;"><p style="font-size: 18px">Đặt phòng</p></button> </td>
+                                <td colspan="2"><button id="hover-p"  type="submit" style="border-radius: 4px; width: 100%; height: 40px; background-color: #c18b27;border: 1px solid #a1731d;cursor: pointer;"><p  style="font-size: 18px;color: #fff; text-transform: uppercase; font-weight: 600;">Đặt phòng</p></button></td>
                             </tr>
                         </table>
                     </form>
