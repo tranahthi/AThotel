@@ -152,15 +152,53 @@ function handleRegister(){
 //     }
 // } 
 
-
-function getIsLoginFromLocalStorage() {
+ 
   const isLogin = localStorage.getItem('isLogin');
-  if (isLogin) {
-    return JSON.parse(isLogin);
-  }
-  return false;
-}
-console.log(getIsLoginFromLocalStorage);
+  if(isLogin === "true") { 
+    const logoutBtn =   
+          '<a href="/homepage.html"  title="Đăng xuất" id="logout" >Đăng xuất</a> </li>';
+          document.getElementById("register-Btnn").innerHTML = logoutBtn;
+    const accountBtn = 
+          '<a href="/homepage.html">Tài khoản</a></li>';
+          document.getElementById("login-Btn").innerHTML = accountBtn;
+  };
+  // if (isLogin) {
+  //   return JSON.parse(isLogin);
+  // }
+  // return false;
+ 
+
+  // const handleLogout = document.querySelector("#logout");
+  // logout.addEventListener("click", () => {
+  //   fetch(apiUser,{
+  //     method : "POST",
+  //     credentials : "include"
+  //   }) .then(respone => {
+  //     if(respone.ok){
+  //       window.location = "homepage.html";
+  //     }else{
+  //       console.log("that bai")
+  //     }
+
+  //   }) .catch(error => {
+  //     console.log(error);
+  //   })
+  // })
+
+  // function logout() {
+  //   isLogin = false;
+  //   const logoutButton  = document.getElementById("logout");
+  //   logoutButton.parentNode.removeChild(logoutButton );
+  // }  
+  const handleLogout = document.querySelector("#logout");
+  logout.addEventListener("click", () => {
+    // window.location.reload();
+
+  })
+
+  
+
+
 
 
 
