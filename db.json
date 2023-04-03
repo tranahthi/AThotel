@@ -42,42 +42,22 @@
     },
     {
       "firstname": "tran",
-      "lastname": "Linh",
-      "email": "anhthi456@gmail.com",
-      "tel": "0935177800",
-      "password": "123456",
-      "id": 6
-    },
-    {
-      "firstname": "tran",
-      "lastname": "van",
-      "email": "aaaaa@gmail.com",
-      "tel": "0128383932",
-      "password": "111111",
-      "id": 7
-    },
-    {
-      "firstname": "nguyen",
       "lastname": "thi",
-      "email": "abc@gmail.com",
-      "tel": "000000000",
-      "password": "111111",
-      "id": 8
-    },
+      "email": "anhthi1234@gmail.com",
+      "tel": "0934875070",
+      "password": "12345",
+      "id": 6
+    }
+  ],
+  "bookings": [
     {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
+      "name": "Trần anh thi",
+      "phone": "0935177801",
+      "checkIn": "2023-04-03",
+      "checkOut": "2023-04-05",
+      "adult": "4",
+      "child": "1",
+      "id": 1
     }
   ]
 }

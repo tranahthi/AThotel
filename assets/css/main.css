@@ -679,6 +679,25 @@ body{
     border: none;
     width: 60px;
 }
+
+.icon-connect svg{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    
+
+    
+    
+}
+.sub-icon-connect{
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    gap:20px;
+   
+    
+
+}
 /* mid footer */
 .mid-footer{
     position: absolute;
@@ -690,9 +709,11 @@ body{
     display: flex;
     align-items: center; 
     color:#fff;
+    justify-content: center;
+    text-transform: uppercase;
+
 }
 .showroom-footer{
-    justify-content: center;
     margin-bottom: 15px;
 }
 .showroom-footer svg{

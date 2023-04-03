@@ -7,6 +7,7 @@ const $$ = document.querySelectorAll.bind(document);
 
 const loginBtn = $('.login');
 const registerBtn = $('.register');
+const bookBtn = $('.book');
 // console.log(registerBtn);
 const clickSearchNode = $('.click-search');
 const searchNode = $('.search-header');
@@ -133,24 +134,7 @@ function handleRegister(){
 
 
 
-// function handleRegister() {
-//   var registerBtn = document.querySelector('.register');
-//     registerBtn.onclick = function (){
-//       var firstname = document.querySelector('input[firstname="firstname"]').value;
-//       var lastname = document.querySelector('input[lastname="lastname"]').value;
-//       var email = document.querySelector('input[email="email"]').value;
-//       var tel = document.querySelector('input[tel="tel"]').value;
-//       var password = document.querySelector('input[password="password"]').value;
-//       var user = {
-//             firstname : firstname.value,
-//             lastname : lastname.value,
-//             email : email.value,
-//             tel : tel.value,
-//             password : password.value,
-//           };
-//           createUser(user);
-//     }
-// } 
+ 
 
  
   const isLogin = localStorage.getItem('isLogin');
@@ -168,28 +152,6 @@ function handleRegister(){
   // return false;
  
 
-  // const handleLogout = document.querySelector("#logout");
-  // logout.addEventListener("click", () => {
-  //   fetch(apiUser,{
-  //     method : "POST",
-  //     credentials : "include"
-  //   }) .then(respone => {
-  //     if(respone.ok){
-  //       window.location = "homepage.html";
-  //     }else{
-  //       console.log("that bai")
-  //     }
-
-  //   }) .catch(error => {
-  //     console.log(error);
-  //   })
-  // })
-
-  // function logout() {
-  //   isLogin = false;
-  //   const logoutButton  = document.getElementById("logout");
-  //   logoutButton.parentNode.removeChild(logoutButton );
-  // }  
   const logout = document.querySelector("#logout");
   logout.addEventListener("click", () => {
     localStorage.clear();
@@ -197,8 +159,62 @@ function handleRegister(){
 
   
 
+// booking room
+function bookBook(){
+  handleBookingRoom ();
+}
+
+bookBtn&& bookBtn.addEventListener('click', function book(e) {
+  e.preventDefault()
+  handleBookingRoom ();
+})
 
 
+const apiBooking = ' http://localhost:3000/bookings';
+
+function handleBookingRoom () {
+ 
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const checkIn = document.getElementById('check-in').value;
+        const checkOut= document.getElementById('check-out').value;
+        const adult = document.getElementById('adult').value;
+        const child = document.getElementById('child').value;
+        const bookingData = {
+          name : name,
+          phone : phone,
+          checkIn : checkIn,
+          checkOut : checkOut,
+          adult : adult,
+          child : child,
+        };  
+        createBookRoom(bookingData);
+        alert('Đặt phòng thành công');
+}
+
+function createBookRoom(data){
+  fetch(apiBooking , {
+    method: "POST",
+    headers: {
+      'Content-type': 'application/json'
+    },
+    body : JSON.stringify(data),
+  })
+  .then(function(respone){
+    return respone.json();
+  })
+  .catch(error => {
+    console.error("Đặt phòng thất bại" , error);
+  });
+
+}
+
+
+
+
+
+
+ 
 
 
 

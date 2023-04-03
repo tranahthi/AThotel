@@ -187,8 +187,8 @@
             </div>
         </div>
         <div style=" width: 40%;display: flex">
-            <form style="background: rgb(221, 220, 220); width: 100%; height: 100%; border-radius: 10px; padding: 20px ">
-                <span style="color: red; font-size: 22px; color: #c40025; font-weight: 500">700.000₫/Đêm</span>
+            <form id="booking-form" style="background: rgb(221, 220, 220); width: 100%; height: 100%; border-radius: 10px; padding: 20px ">
+                <span style="color: red; font-size: 22px; color: #c40025; font-weight: 500">500.000₫/Đêm</span>
                 <hr style="color: #B88A27; font-size: larger">
                 <table width="100%">
                     <tr>
@@ -196,24 +196,24 @@
                         <td><p style="font-size: 18px">Số điện thoại*</p></td>
                     </tr>
                     <tr>
-                        <td><input type="text" placeholder="Họ và tên" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
-                        <td><input type="text" placeholder="Số điện thoại" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" ></td>
+                        <td><input id="name" name="name" required type="text" placeholder="Họ và tên" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
+                        <td><input id="phone" name="phone" required type="text" placeholder="Số điện thoại" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" ></td>
                     </tr>
                     <tr>
-                        <td><p style="font-size: 18px">Ngày nhận*</p></td>
-                        <td><p style="font-size: 18px">Ngày trả*</p></td>
+                        <td><p style="font-size: 18px">Ngày đến*</p></td>
+                        <td><p style="font-size: 18px">Ngày đi*</p></td>
                     </tr>
                     <tr>
-                        <td><input type="date" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
-                        <td><input type="date" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
+                        <td><input type="date" id="check-in" name="check-in"  style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" required></td>
+                        <td><input type="date" id="check-out" name="check-out"  style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" required></td>
                     </tr>
                     <tr>
                         <td><p style="font-size: 18px">Người lớn*</p></td>
                         <td><p style="font-size: 18px">Trẻ em*</p></td>
                     </tr>
                     <tr>
-                        <td><input type="number" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px"></td>
-                        <td><input type="number" style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" ></td>
+                        <td><input type="number" id="adult" name="adult"  min="1" max="4"  style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" required></td>
+                        <td><input type="number" id="child" name="child" min="1" max="4"  style="border-radius: 4px; width: 100%; height: 40px; font-size: 18px" required></td>
                     </tr>
                     <tr>
                         <td><br></td>
@@ -221,7 +221,7 @@
                     </tr>
                     <tr>
                         <td><button type="submit" style="border-radius: 4px; width: 100%; height: 40px"><p style="font-size: 18px">Tạm tính</p></button> </td>
-                        <td><button type="submit" style="border-radius: 4px; width: 100%; height: 40px; background-color:#a1731d;"><p style="font-size: 18px">Đặt phòng</p></button> </td>
+                        <td><button type="submit" class="book" style="border-radius: 4px; width: 100%; height: 40px; background-color:#d29422;"><p style="font-size: 18px;color: #fff;">Đặt phòng</p></button> </td>
                     </tr>
                 </table>
             </form>
