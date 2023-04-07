@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Lịch sử đặt phòng</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-content">
+                <h2>Chào mừng bạn đến với TDK Hotel</h2>
+            </div>
+            <ul class="menu-list">
+                <!-- <div id="logoutMenu" style=" display: none;">
+                    <li id="logout-Btn" title="đăng xuất"><a href="/">Đăng xuất</a></li> 
+                    <li id="account-Btn"  title="tài khoản"><a href="/">Tài khoản</a></li>
+                </div> -->
+                
+                <li id="register-Btnn" title="đăng ký"><a href="register.html">Đăng ký</a></li> 
+                <li id="login-Btn" title="đăng nhập"><a href="login.html">Đăng nhập</a></li>
+                <li class="search-header" title="tìm kiếm">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                    Tìm kiếm
+                    <div class="click-search" >
+                        <input class="input-search" type="text" placeholder="Nhập từ khóa tìm kiếm">
+                        <div class="key-popular">
+                            <h1 class="title-key-popular">Từ khóa phổ biến</h1>
+                            <ul class="room-popular">
+                                <li>Phòng đơn</li>
+                                <li>Phòng đôi</li>
+                                <li>Phòng vip</li>
+                                <li>Hội nghị</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="book-room" title="đặt phòng">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                  </svg>   
+                Đặt phòng
+            </div>
+        </div>
+        <!-- manin header-->
+        <div class="main-header">
+            <div class="logo-header">
+                <img width="250" height="180" src="/assets/img/logo-update.png" alt="ảnh logo">
+            </div>
+            <div class="nav-header">
+                <ul class="nav">
+                    <li><a href="homepage.html">Trang chủ</a></li>
+                    <li><a href="aboutus.html">Về chúng tôi</a></li>
+                    <li>
+                        <div class="subnav-room">
+                            <a href="/phong">Phòng</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            <ul class="room-list">
+                                <li><a href="phongdon.html">Phòng đơn</a></li>
+                                <li><a href="phongdoi.html">Phòng đôi</a></li>
+                                <li><a href="phongvip.html">Phòng vip</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subnav-food">
+                            <a href="/amthuc">Ẩm thực</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            <ul class="food-list">
+                                <li><a href="monan.html">Món ăn</a></li>
+                                <li><a href="douong.html">Đồ uống</a></li>
+                                <li><a href="banhngot.html">Bánh ngọt</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="dichvu.html">Dịch vụ</a></li>
+                    <li><a href="thuvienanh.html">Thư viện ảnh</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                    <li><a href="lichsudathong.html">Lịch sử đặt phòng</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end main header -->
+    </header>
+     <!--End header  -->
+     <div class="body-paper">
+        <section class="about-us">
+            <div class="container">
+                <div class="sub-about-us">
+                    <ul class="home-page">
+                        <li>
+                           <div class="home-svg"> 
+                                <h3 class="sub-home">Trang chủ</h3>
+                                <span class="svg-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>     
+                                </span>
+
+                           </div>
+                        </li>
+                        <li>
+                            <strong>
+                                <h3 class="us-us">Lịch sử đặt phòng</h3>
+                            </strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="infor-book-room">
+            <div class="title-order-room">
+                <h1>Đơn đặt phòng của bạn</h1>
+            </div>
+            <div class="table-order">
+                <table class="sub-table-order">
+                    <thead class="thead">
+                        <tr>
+                            <th>Loại phòng</th>
+                            <th>Ngày đến </th>
+                            <th>Ngày đi</th>
+                            <th>Gía tiền</th>
+                            <th>Trạng thái thanh toán</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody" style="border-bottom: 1px solid #a70202;">
+                        <tr>
+                            <td>
+                                <p style="display:flex;text-align: center;">Không có đơn đặt hàng nào</p>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+     </div>
+</body>
+</html>

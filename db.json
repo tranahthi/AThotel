@@ -58,6 +58,44 @@
       "adult": "4",
       "child": "1",
       "id": 1
+    },
+    {
+      "name": "văn bá linh",
+      "phone": "0935170931",
+      "checkIn": "2023-04-03",
+      "checkOut": "2023-04-05",
+      "adult": "1",
+      "child": "1",
+      "id": 2
+    },
+    {
+      "name": "Trịnh phú tân",
+      "phone": "011334237",
+      "checkIn": "2023-04-05",
+      "checkOut": "2023-04-06",
+      "adult": "1",
+      "child": "2",
+      "id": 3
+    },
+    {
+      "name": "lê văn lộc",
+      "phone": "0377334783",
+      "checkIn": "2023-04-06",
+      "checkOut": "2023-04-07",
+      "adult": "1",
+      "child": "1",
+      "id": 4
+    },
+    {
+      "name": "anh",
+      "phone": "0934634722",
+      "checkIn": "2023-04-07",
+      "checkOut": "2023-04-13",
+      "adult": "1",
+      "child": "1",
+      "typeRoom": "Phòng đơn tiêu chuẩn",
+      "price": "500.000₫/Đêm",
+      "id": 5
     }
   ]
 }

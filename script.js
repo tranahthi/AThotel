@@ -8,11 +8,17 @@ const $$ = document.querySelectorAll.bind(document);
 const loginBtn = $('.login');
 const registerBtn = $('.register');
 const bookBtn = $('.book');
+const tempBtn = $('.button-temp');
 // console.log(registerBtn);
 const clickSearchNode = $('.click-search');
 const searchNode = $('.search-header');
 const bookRoom = $('.book-room'); 
-const logoHeader = $('.logo-header'); 
+const logoHeader = $('.logo-header');
+// const fromDate = $('.fromDate');
+// const toDate = $('.toDate');
+const totalPrice = $('.total-price');
+
+
 searchNode.addEventListener('click', () => {
   clickSearchNode.style.display = 'block';
 })
@@ -58,10 +64,12 @@ registerBtn&& registerBtn.addEventListener('click', function register(e) {
   handleRegister();
 
 })
+
+
 var apiUser = ' http://localhost:3000/user';
 
 
-
+// chuc nang Dang nhap
 
 function getUser(callback) {
   fetch(apiUser)
@@ -91,7 +99,7 @@ function handleLogin(users) {
 
 
 
-
+// chuc nang dang ky 
 function signUp(){
   handleRegister();
 }
@@ -140,10 +148,10 @@ function handleRegister(){
   const isLogin = localStorage.getItem('isLogin');
   if(isLogin === "true") { 
     const logoutBtn =   
-          '<a href="/homepage.html"  title="Đăng xuất" id="logout" >Đăng xuất</a> </li>';
+          '<a href="/homepage.html"  title="Đăng xuất" id="logout" >Đăng xuất</a> ';
           document.getElementById("register-Btnn").innerHTML = logoutBtn;
     const accountBtn = 
-          '<a href="/homepage.html">Tài khoản</a></li>';
+          '<a href="/homepage.html">Tài khoản</a>';
           document.getElementById("login-Btn").innerHTML = accountBtn;
   };
   // if (isLogin) {
@@ -159,7 +167,7 @@ function handleRegister(){
 
   
 
-// booking room
+// chuc nang booking room
 function bookBook(){
   handleBookingRoom ();
 }
@@ -172,8 +180,11 @@ bookBtn&& bookBtn.addEventListener('click', function book(e) {
 
 const apiBooking = ' http://localhost:3000/bookings';
 
+
+
 function handleBookingRoom () {
- 
+        const typeRoom = document.getElementById('name-type-room').innerText;
+        const price = document.getElementById('price').innerText;
         const name = document.getElementById('name').value;
         const phone = document.getElementById('phone').value;
         const checkIn = document.getElementById('check-in').value;
@@ -182,11 +193,13 @@ function handleBookingRoom () {
         const child = document.getElementById('child').value;
         const bookingData = {
           name : name,
-          phone : phone,
+          phone : phone, 
           checkIn : checkIn,
           checkOut : checkOut,
           adult : adult,
           child : child,
+          typeRoom : typeRoom,
+          price : price,
         };  
         createBookRoom(bookingData);
         alert('Đặt phòng thành công');
@@ -200,7 +213,7 @@ function createBookRoom(data){
     },
     body : JSON.stringify(data),
   })
-  .then(function(respone){
+  .then(function(respone){ 
     return respone.json();
   })
   .catch(error => {
@@ -208,6 +221,55 @@ function createBookRoom(data){
   });
 
 }
+
+
+// render ra giao dien cac don dat phong
+// const price = document.getElementById('price');
+// const btnTemp = document.getElementById("btnTemp");
+// const contentDiv = document.getElementById("content");
+// const subContentDiv = document.getElementById("sub-content");
+// const totalPrice = document.getElementById("total-price");
+// btnTemp.addEventListener('click' , () =>{
+//   contentDiv.innerHTML ='<div class = "content-price">Giá niêm yết (1*500.000đ/đêm)</div>';
+//   subContentDiv.innerHTML = '<div> 500.000đ</div>';
+//   totalPrice.innerHTML = '<div>Tổng giá</div>';
+//   // contentPrice.innerHTML = '<div class = "">500.000</div>';
+// });
+
+//  function tinh gia tam thoi
+function temporaryStart(){
+  temporary();
+  
+}
+
+function temporary(){
+  const fromDate = $('.fromDate').val();
+  const toDate = $('.toDate').val();
+  if(toDate <= fromDate){
+    alert("Ngày trả phải lớn hơn ngày nhận");
+    return false;
+  }
+  const donGia = $('.price.product-price').html();
+  const valuGia = $('.bost-price').html();
+  const thoiGianGiuaHaiNgay = (ngayDau,ngayCuoi) => (ngayCuoi - ngayDau)/1000*3600*24;
+  const ngayDau = new Date(fromDate);
+  const ngayCuoi = new Date(toDate);
+  const ketQua = thoiGianGiuaHaiNgay(ngayDau , ngayCuoi);
+  var tongTien;
+  tongTien = ketQua * valuGia;
+  btnTemp.addEventListener('click' , () =>{
+  var totalPrice = document.getElementById("btnTemp");
+      totalPrice.innerHTML = '<div class="div-tam-tinh"> <div class="gia-niem-yet">Giá niêm yết('+ ketQua + 'x' + donGia +'</div><div class="tong-gia><div class="title-tong-gia">Tổng tiền</div><div>(' + tongTien +')</div></div></div>';
+});
+}
+
+
+
+
+
+
+
+
 
 
 

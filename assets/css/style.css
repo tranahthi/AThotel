@@ -78,3 +78,18 @@ body{
     color:  #c40025;
     font-weight: 500;
 }
+
+
+#total-price{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+#sub-content{
+    float: right;
+}
+.hidden{
+    display: none;
+}
+
