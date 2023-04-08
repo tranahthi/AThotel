@@ -15,6 +15,59 @@
       "email": "vietnguyen256@gmail.com",
       "tel": "0772624437",
       "password": "234567"
+    },
+    {
+      "firstname": "nguyen",
+      "lastname": "thi",
+      "email": "anhthiabcz@gmail.com",
+      "tel": "0772624437",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "firstname": "nguyen",
+      "lastname": " van viet",
+      "email": "anhthi123@gmail.com",
+      "tel": "099939399",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "firstname": "tran",
+      "lastname": "thi",
+      "email": "anhthiabcz@gmail.com",
+      "tel": "0772624437",
+      "password": "12345678",
+      "id": 5
+    },
+    {
+      "firstname": "tran",
+      "lastname": "thi",
+      "email": "anhthi1234@gmail.com",
+      "tel": "0934875070",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "firstname": "Võ Trường ",
+      "lastname": "Dũng",
+      "email": "votruongdung4@gmail.com",
+      "tel": "0905109563",
+      "password": "123456",
+      "id": 7
+    }
+  ],
+  "bookings": [
+   
+  ],
+  "room":[
+    {
+      "id": 1,
+      "name": "Phòng đơn tiêu chuẩn"
+    },
+    {
+      "id": 2,
+      "name": "Phòng đơn view thành phố"
     }
   ]
 }
