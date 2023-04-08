@@ -103,8 +103,6 @@ function handleLogin(users) {
 function signUp(){
   handleRegister();
 }
-
-
 function createUser (data) {
   fetch(apiUser,{
     method: "POST",
@@ -120,7 +118,6 @@ function createUser (data) {
 
 
 function handleRegister(){
-  
   var firstname = document.getElementById("fisrtname").value;
   var lastname = document.getElementById("lastname").value;
   var email = document.getElementById("email").value;

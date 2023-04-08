@@ -47,6 +47,14 @@
       "tel": "0934875070",
       "password": "12345",
       "id": 6
+    },
+    {
+      "firstname": "Võ Trường ",
+      "lastname": "Dũng",
+      "email": "votruongdung4@gmail.com",
+      "tel": "0905109563",
+      "password": "123456",
+      "id": 7
     }
   ],
   "bookings": [
@@ -96,6 +104,27 @@
       "typeRoom": "Phòng đơn tiêu chuẩn",
       "price": "500.000₫/Đêm",
       "id": 5
+    },
+    {
+      "name": "Võ Trường Dũng",
+      "phone": "0905109563",
+      "checkIn": "2023-04-08",
+      "checkOut": "2023-04-17",
+      "adult": "2",
+      "child": "1",
+      "typeRoom": "Phòng đơn view thành phố",
+      "price": "700.000₫/Đêm",
+      "id": 6
+    }
+  ],
+  "room":[
+    {
+      "id": 1,
+      "name": "Phòng đơn tiêu chuẩn"
+    },
+    {
+      "id": 2,
+      "name": "Phòng đơn view thành phố"
     }
   ]
 }
