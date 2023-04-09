@@ -4,17 +4,17 @@ var apiDoubleRoome = 'http://localhost:3000/doubleroom';
 
 
 function getSingleRoom(callback) {
-    fetch(apiSinggleRoom)
-        .then(function (respone) {
-            return respone.json();
-        })
-        .then(callback);
+  fetch(apiSinggleRoom)
+    .then(function (respone) {
+      return respone.json();
+    })
+    .then(callback);
 
 }
 const renderSingleRoom = (datas) => {
-    const roomHandle = document.querySelector('.col-display-room')
-    roomHandle.innerHTML = datas.map(data =>
-        `<div class="alter-item-product-room">
+  const roomHandle = document.querySelector('.col-display-room')
+  roomHandle.innerHTML = datas.map(data =>
+    `<div class="alter-item-product-room">
         <div class="item-product-img">
           <a href="/phong-don-tieu-chuan">
             <img
@@ -77,7 +77,6 @@ const renderSingleRoom = (datas) => {
           </div>
         </div>
       </div>`
-
-    )
+  )
 }
 getSingleRoom(renderSingleRoom)
