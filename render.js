@@ -70,7 +70,7 @@ const renderSingleRoom = (datas) => {
           </div>
           <div class="product-infor-room">
             <div class="price-room">
-              <span class="price">${data.price}/Đêm</span>
+              <span class="price">${data.price}đ/Đêm</span>
             </div>
             <div class="booking-room">
               <a class="btn-booking" href="datphongdonchitiet.html"
@@ -165,7 +165,7 @@ const renderDoubleRoom = (datas) => {
       </div>
       <div class="product-infor-room">
         <div class="price-room">
-          <span class="price">${data.price}/Đêm</span>
+          <span class="price">${data.price}đ/Đêm</span>
         </div>
         <div class="booking-room">
           <a class="btn-booking" href="/phong-doi-tieu-chuan"

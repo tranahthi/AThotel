@@ -1,138 +1,26 @@
 {
   "user": [
     {
-      "id": 1,
-      "firstname": "tran",
-      "lastname": "thi",
-      "email": "trananhthi256@gmail.com",
-      "tel": "0935177801",
-      "password": "123456"
-    },
-    {
-      "id": 2,
-      "firstname": "nguyen",
-      "lastname": "viet",
-      "email": "vietnguyen256@gmail.com",
-      "tel": "0772624437",
-      "password": "234567"
-    },
-    {
-      "firstname": "nguyen",
-      "lastname": "thi",
-      "email": "anhthiabcz@gmail.com",
-      "tel": "0772624437",
-      "password": "12345678",
-      "id": 3
-    },
-    {
-      "firstname": "nguyen",
-      "lastname": " van viet",
-      "email": "anhthi123@gmail.com",
-      "tel": "099939399",
+      "firstname": "ngo",
+      "lastname": "hy",
+      "email": "hyngu@gmail.com",
+      "tel": "0976456745",
       "password": "123456",
-      "id": 4
-    },
-    {
-      "firstname": "tran",
-      "lastname": "thi",
-      "email": "anhthiabcz@gmail.com",
-      "tel": "0772624437",
-      "password": "12345678",
-      "id": 5
-    },
-    {
-      "firstname": "tran",
-      "lastname": "thi",
-      "email": "anhthi1234@gmail.com",
-      "tel": "0934875070",
-      "password": "12345",
-      "id": 6
-    },
-    {
-      "firstname": "Võ Trường ",
-      "lastname": "Dũng",
-      "email": "votruongdung4@gmail.com",
-      "tel": "0905109563",
-      "password": "123456",
-      "id": 7
-    },
-    {
-      "firstname": "tran",
-      "lastname": "thi",
-      "email": "thianhtran@gmail.com",
-      "tel": "0935177817",
-      "password": "123456",
-      "id": 8
-    },
-    {
-      "firstname": "tran",
-      "lastname": "anh",
-      "email": "123@gmail.com",
-      "tel": "093476322",
-      "password": "123456",
-      "id": 9
+      "id": 1
     }
   ],
   "bookings": [
     {
-      "name": "Trần anh thi",
-      "phone": "0935177801",
-      "checkIn": "2023-04-03",
-      "checkOut": "2023-04-05",
-      "adult": "4",
-      "child": "1",
-      "id": 1
-    },
-    {
-      "name": "văn bá linh",
-      "phone": "0935170931",
-      "checkIn": "2023-04-03",
-      "checkOut": "2023-04-05",
-      "adult": "1",
-      "child": "1",
-      "id": 2
-    },
-    {
-      "name": "Trịnh phú tân",
-      "phone": "011334237",
-      "checkIn": "2023-04-05",
-      "checkOut": "2023-04-06",
-      "adult": "1",
-      "child": "2",
-      "id": 3
-    },
-    {
-      "name": "lê văn lộc",
-      "phone": "0377334783",
-      "checkIn": "2023-04-06",
-      "checkOut": "2023-04-07",
-      "adult": "1",
-      "child": "1",
-      "id": 4
-    },
-    {
-      "name": "anh",
+      "name": "nh",
       "phone": "0934634722",
-      "checkIn": "2023-04-07",
+      "checkIn": "2023-04-12",
       "checkOut": "2023-04-13",
       "adult": "1",
       "child": "1",
       "typeRoom": "Phòng đơn tiêu chuẩn",
       "price": "500.000₫/Đêm",
-      "id": 5
-    },
-    {
-      "name": "Võ Trường Dũng",
-      "phone": "0905109563",
-      "checkIn": "2023-04-08",
-      "checkOut": "2023-04-17",
-      "adult": "2",
-      "child": "1",
-      "typeRoom": "Phòng đơn view thành phố",
-      "price": "700.000₫/Đêm",
-      "id": 6
+      "id": 1
     }
-    
   ],
   "singleroom": [
     {
@@ -140,112 +28,151 @@
       "name": "Phòng đơn tiêu chuẩn",
       "price": 500000,
       "image": "/assets/img/anh_don_view_dep.webp",
-      "alt" : "Phòng đơn tiêu chuẩn,",
-      "guest" : "01",
-      "area" : 20,
-      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
-      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
-      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
-      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+      "alt": "Phòng đơn tiêu chuẩn,",
+      "guest": "01",
+      "area": 20,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 2,
       "name": "Phòng đơn view thành phố",
       "price": 700000,
       "image": "/assets/img/anh_don_view_dep.webp",
-      "alt" : "Phòng đơn view thành phố",
-      "guest" : "01",
-      "area" : 25,
-      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
-      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
-      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
-      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
-      
+      "alt": "Phòng đơn view thành phố",
+      "guest": "01",
+      "area": 25,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 3,
       "name": "Phòng đơn view sân vườn",
       "price": 800000,
       "image": "/assets/img/anh_don_view_dep.webp",
-      "alt" : "Phòng đơn view sân vườn",
-      "guest" : "01",
-      "area" : 25,
-      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
-      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
-      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
-      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+      "alt": "Phòng đơn view sân vườn",
+      "guest": "01",
+      "area": 25,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 4,
       "name": "Phòng đơn view biển",
       "price": 900000,
       "image": "/assets/img/anh_don_view_dep.webp",
-      "alt" : "Phòng đơn view biển",
-      "guest" : "01",
-      "area" : 25,
-      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
-      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
-      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
-      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+      "alt": "Phòng đơn view biển",
+      "guest": "01",
+      "area": 25,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     }
   ],
-
   "doubleroom": [
     {
       "id": 1,
       "name": "Phòng đôi tiêu chuẩn",
       "price": 950000,
       "image": "/assets/img/anh_don_view_dep.webp",
-      "alt" : "Phòng đôi tiêu chuẩn",
-      "guest" : "02",
-      "area" : 25,
-      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
-      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
-      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
-      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
-      "svg5" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+      "alt": "Phòng đôi tiêu chuẩn",
+      "guest": "02",
+      "area": 25,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg5": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 2,
       "name": "Phòng đôi view thành phố",
       "price": 1100000,
       "image": "/assets/img/anh_don_view_dep.webp",
-      "alt" : "Phòng đôi view thành phố",
-      "guest" : "02",
-      "area" : 30,
-      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
-      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
-      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
-      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
-      "svg5" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+      "alt": "Phòng đôi view thành phố",
+      "guest": "02",
+      "area": 30,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg5": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 3,
       "name": "Phòng đôi view sân vườn",
       "price": 1200000,
       "image": "/assets/img/anh_don_view_dep.webp",
-      "alt" : "Phòng đôi view sân vườn",
-      "guest" : "02",
-      "area" : 30,
-      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
-      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
-      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
-      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
-      "svg5" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+      "alt": "Phòng đôi view sân vườn",
+      "guest": "02",
+      "area": 30,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg5": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 4,
       "name": "Phòng đôi 2 giường đôi",
       "price": 1500000,
       "image": "/assets/img/anh_don_view_dep.webp",
-      "alt" : "Phòng đôi view biển",
-      "guest" : "04",
-      "area" : 32,
-      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
-      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
-      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
-      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
-      "svg5" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+      "alt": "Phòng đôi view biển",
+      "guest": "04",
+      "area": 32,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg5": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+    }
+  ],"detailbookroom": [
+    
+    {
+      "id": 1,
+      "name": "Phòng đơn view thành phố",
+      "price": 700000,
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt": "Phòng đơn view thành phố",
+      "guest": "01",
+      "area": 25,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+    },
+    {
+      "id": 2,
+      "name": "Phòng đơn view sân vườn",
+      "price": 800000,
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt": "Phòng đơn view sân vườn",
+      "guest": "01",
+      "area": 25,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+    },
+    {
+      "id": 3,
+      "name": "Phòng đơn view biển",
+      "price": 900000,
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt": "Phòng đơn view biển",
+      "guest": "01",
+      "area": 25,
+      "svg1": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4": "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     }
   ]
 }
