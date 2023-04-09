@@ -4,10 +4,10 @@ const $$ = document.querySelectorAll.bind(document);
 
 const loginBtn = $('.login');
 
-loginBtn&&loginBtn.addEventListener('click', function login(e) {
-    e.preventDefault()
-    getUser(handleLogin);
-  })
+loginBtn && loginBtn.addEventListener('click', function login(e) {
+  e.preventDefault()
+  getUser(handleLogin);
+})
 
 
 

@@ -144,16 +144,31 @@
       "id": 7
     }
   ],
-  "room": [
+  "singleroom": [
     {
       "id": 1,
-      "roomName": "Phòng đơn tiêu chuẩn",
-      "pricePerDay":500000
+      "name": "Phòng đơn tiêu chuẩn",
+      "price": 500000,
+      "image": "/assets/img/anh_don_view_dep.webp"
     },
     {
       "id": 2,
-      "roomName": "Phòng đơn view thành phố",
-      "pricePerDay":700000
+      "name": "Phòng đơn view thành phố",
+      "price": 700000,
+      "image": "/assets/img/anh_don_view_dep.webp"
+    },
+    {
+      "id": 3,
+      "name": "Phòng đơn view sân vườn",
+      "price": 800000,
+      "image": "/assets/img/anh_don_view_dep.webp"
+    },
+    {
+      "id": 4,
+      "name": "Phòng đơn view biển",
+      "price": 900000,
+      "image": "/assets/img/anh_don_view_dep.webp"
     }
-  ]
+  ],
+  "doubleroom": []
 }
