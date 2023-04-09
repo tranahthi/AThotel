@@ -131,44 +131,85 @@
       "typeRoom": "Phòng đơn view thành phố",
       "price": "700.000₫/Đêm",
       "id": 6
-    },
-    {
-      "name": "anh",
-      "phone": "0934634722",
-      "checkIn": "2023-04-12",
-      "checkOut": "2023-04-13",
-      "adult": "1",
-      "child": "2",
-      "typeRoom": "Phòng đơn tiêu chuẩn",
-      "price": "500.000₫/Đêm",
-      "id": 7
     }
+    
   ],
   "singleroom": [
     {
       "id": 1,
       "name": "Phòng đơn tiêu chuẩn",
       "price": 500000,
-      "image": "/assets/img/anh_don_view_dep.webp"
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt" : "Phòng đơn tiêu chuẩn,",
+      "guest" : "01",
+      "area" : 20
     },
     {
       "id": 2,
       "name": "Phòng đơn view thành phố",
       "price": 700000,
-      "image": "/assets/img/anh_don_view_dep.webp"
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt" : "Phòng đơn view thành phố",
+      "guest" : "01",
+      "area" : 25
     },
     {
       "id": 3,
       "name": "Phòng đơn view sân vườn",
       "price": 800000,
-      "image": "/assets/img/anh_don_view_dep.webp"
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt" : "Phòng đơn view sân vườn",
+      "guest" : "01",
+      "area" : 25
     },
     {
       "id": 4,
       "name": "Phòng đơn view biển",
       "price": 900000,
-      "image": "/assets/img/anh_don_view_dep.webp"
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt" : "Phòng đơn view biển",
+      "guest" : "01",
+      "area" : 25
     }
   ],
-  "doubleroom": []
+
+  "doubleroom": [
+    {
+      "id": 1,
+      "name": "Phòng đôi tiêu chuẩn",
+      "price": 950000,
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt" : "Phòng đôi tiêu chuẩn",
+      "guest" : "02",
+      "area" : 25
+    },
+    {
+      "id": 2,
+      "name": "Phòng đôi view thành phố",
+      "price": 1100000,
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt" : "Phòng đôi view thành phố",
+      "guest" : "02",
+      "area" : 30
+    },
+    {
+      "id": 3,
+      "name": "Phòng đôi view sân vườn",
+      "price": 1200000,
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt" : "Phòng đôi view sân vườn",
+      "guest" : "02",
+      "area" : 30
+    },
+    {
+      "id": 4,
+      "name": "Phòng đôi 2 giường đôi",
+      "price": 1500000,
+      "image": "/assets/img/anh_don_view_dep.webp",
+      "alt" : "Phòng đôi view biển",
+      "guest" : "04",
+      "area" : 32
+    }
+
+  ]
 }
