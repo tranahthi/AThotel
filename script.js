@@ -5,10 +5,10 @@ const $$ = document.querySelectorAll.bind(document);
 
 
 
-const loginBtn = $('.login');
-const registerBtn = $('.register');
-const bookBtn = $('.book');
-const tempBtn = $('.button-temp');
+// const loginBtn = $('.login');
+// const registerBtn = $('.register');
+// const bookBtn = $('.book');
+// const tempBtn = $('.button-temp');
 // console.log(registerBtn);
 const clickSearchNode = $('.click-search');
 const searchNode = $('.search-header');
@@ -16,7 +16,7 @@ const bookRoom = $('.book-room');
 const logoHeader = $('.logo-header');
 // const fromDate = $('.fromDate');
 // const toDate = $('.toDate');
-const totalPrice = $('.total-price');
+// const totalPrice = $('.total-price');
 
 
 searchNode.addEventListener('click', () => {
@@ -31,20 +31,6 @@ logoHeader.addEventListener('click', () => {
 })
 
 
-// const arrowDownRoom = document.querySelector('.arrow-down-room');
-// const roomFood = document.querySelector('.room-food');
-
-// roomFood.addEventListener('click',() => {
-//     console.log('helo')
-//     arrowDownRoom.style.display = 'block';
-// })
-// const arrowDownFood = document.querySelector('.arrow-down-food');
-// const food = document.querySelector('#food');
-//    food.addEventListener('click', () => {
-//     arrowDownFood.style.display = 'block';
-
-//    }
-//    )
 bookRoom.addEventListener('click', () => {
   window.location = `datphong.html`;
 })
@@ -53,87 +39,86 @@ bookRoom.addEventListener('click', () => {
 
 
 
-loginBtn&&loginBtn.addEventListener('click', function login(e) {
-  e.preventDefault()
-  getUser(handleLogin);
-})
+// loginBtn&&loginBtn.addEventListener('click', function login(e) {
+//   e.preventDefault()
+//   getUser(handleLogin);
+// })
 
-registerBtn&& registerBtn.addEventListener('click', function register(e) {
-  e.preventDefault()
-  // createUser(handleRegister);
-  handleRegister();
-
-})
-
-
-var apiUser = ' http://localhost:3000/user';
+// registerBtn&& registerBtn.addEventListener('click', function register(e) {
+//   e.preventDefault()
+//   // createUser(handleRegister);
+//   handleRegister();
+// })
 
 
-// chuc nang Dang nhap
+// var apiUser = ' http://localhost:3000/user';
 
-function getUser(callback) {
-  fetch(apiUser)
-    .then(function (respone) {
-      return respone.json();
-    })
-    .then(callback);
 
-}
+// // chuc nang Dang nhap
 
-function handleLogin(users) {
-  var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
-  {
-    const user = users.find((user) => user.email === email);
-    if (user && user.password === password) {
-      localStorage.setItem("logUser", user.id);
-      localStorage.setItem("isLogin", true);
-      alert("dang nhap thanh cong");
-      window.location = `homepage.html`;
-    } else {
-      alert("Tài khoản hoặc mật khẩu không đúng");
-    }
-  };
-}
+// function getUser(callback) {
+//   fetch(apiUser)
+//     .then(function (respone) {
+//       return respone.json();
+//     })
+//     .then(callback);
+
+// }
+
+// function handleLogin(users) {
+//   var email = document.getElementById("email").value;
+//   var password = document.getElementById("password").value;
+//   {
+//     const user = users.find((user) => user.email === email);
+//     if (user && user.password === password) {
+//       localStorage.setItem("logUser", user.id);
+//       localStorage.setItem("isLogin", true);
+//       alert("dang nhap thanh cong");
+//       window.location = `homepage.html`;
+//     } else {
+//       alert("Tài khoản hoặc mật khẩu không đúng");
+//     }
+//   };
+// }
 
 
 
 
 // chuc nang dang ky 
-function signUp(){
-  handleRegister();
-}
-function createUser (data) {
-  fetch(apiUser,{
-    method: "POST",
-    headers: {
-      "Content-Type" : "application/json",  
-    },
-    body : JSON.stringify(data),
-  }).then(function(response){
-    return response.json();
-  }).catch((error) =>console.error(error));
+// function signUp(){
+//   handleRegister();
+// }
+// function createUser (data) {
+//   fetch(apiUser,{
+//     method: "POST",
+//     headers: {
+//       "Content-Type" : "application/json",  
+//     },
+//     body : JSON.stringify(data),
+//   }).then(function(response){
+//     return response.json();
+//   }).catch((error) =>console.error(error));
 
-}
+// }
 
 
-function handleRegister(){
-  var firstname = document.getElementById("fisrtname").value;
-  var lastname = document.getElementById("lastname").value;
-  var email = document.getElementById("email").value;
-  var tel = document.getElementById("tel").value;
-  var password = document.getElementById("password").value;
-  var user = {
-    firstname : firstname,
-    lastname : lastname,
-    email : email,
-    tel : tel,
-    password : password,
-  };
-  createUser(user);
-  alert('tao tai khoan thanh cong');
+// function handleRegister(){
+//   var firstname = document.getElementById("fisrtname").value;
+//   var lastname = document.getElementById("lastname").value;
+//   var email = document.getElementById("email").value;
+//   var tel = document.getElementById("tel").value;
+//   var password = document.getElementById("password").value;
+//   var user = {
+//     firstname : firstname,
+//     lastname : lastname,
+//     email : email,
+//     tel : tel,
+//     password : password,
+//   };
+//   createUser(user);
+//   alert('tao tai khoan thanh cong');
   
-}
+// }
 
 
 
@@ -142,82 +127,78 @@ function handleRegister(){
  
 
  
-  const isLogin = localStorage.getItem('isLogin');
-  if(isLogin === "true") { 
-    const logoutBtn =   
-          '<a href="/homepage.html"  title="Đăng xuất" id="logout" >Đăng xuất</a> ';
-          document.getElementById("register-Btnn").innerHTML = logoutBtn;
-    const accountBtn = 
-          '<a href="/homepage.html">Tài khoản</a>';
-          document.getElementById("login-Btn").innerHTML = accountBtn;
-  };
-  // if (isLogin) {
-  //   return JSON.parse(isLogin);
-  // }
-  // return false;
- 
+  // const isLogin = localStorage.getItem('isLogin');
+  // if(isLogin === "true") { 
+  //   const logoutBtn =   
+  //         '<a href="/homepage.html"  title="Đăng xuất" id="logout" >Đăng xuất</a> ';
+  //         document.getElementById("register-Btnn").innerHTML = logoutBtn;
+  //   const accountBtn = 
+  //         '<a href="/homepage.html">Tài khoản</a>';
+  //         document.getElementById("login-Btn").innerHTML = accountBtn;
+  // };
 
-  const logout = document.querySelector("#logout");
-  logout.addEventListener("click", () => {
-    localStorage.clear();
-  })
+
+  // const logout = document.querySelector("#logout");
+  // logout.addEventListener("click", () => {
+  //   localStorage.clear();
+  // })
 
   
 
 // chuc nang booking room
-function bookBook(){
-  handleBookingRoom ();
-}
+// function bookBook(){
+//   handleBookingRoom ();
+// }
 
-bookBtn&& bookBtn.addEventListener('click', function book(e) {
-  e.preventDefault()
-  handleBookingRoom ();
-})
-
-
-const apiBooking = ' http://localhost:3000/bookings';
+// bookBtn&& bookBtn.addEventListener('click', function book(e) {
+//   e.preventDefault()
+//   handleBookingRoom ();
+// })
 
 
+// const apiBooking = ' http://localhost:3000/bookings';
 
-function handleBookingRoom () {
-        const typeRoom = document.getElementById('name-type-room').innerText;
-        const price = document.getElementById('price').innerText;
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const checkIn = document.getElementById('check-in').value;
-        const checkOut= document.getElementById('check-out').value;
-        const adult = document.getElementById('adult').value;
-        const child = document.getElementById('child').value;
-        const bookingData = {
-          name : name,
-          phone : phone, 
-          checkIn : checkIn,
-          checkOut : checkOut,
-          adult : adult,
-          child : child,
-          typeRoom : typeRoom,
-          price : price,
-        };  
-        createBookRoom(bookingData);
-        alert('Đặt phòng thành công');
-}
 
-function createBookRoom(data){
-  fetch(apiBooking , {
-    method: "POST",
-    headers: {
-      'Content-type': 'application/json'
-    },
-    body : JSON.stringify(data),
-  })
-  .then(function(respone){ 
-    return respone.json();
-  })
-  .catch(error => {
-    console.error("Đặt phòng thất bại" , error);
-  });
 
-}
+// function handleBookingRoom () {
+//         const typeRoom = document.getElementById('name-type-room').innerText;
+//         const price = document.getElementById('price').innerText;
+//         const name = document.getElementById('name').value;
+//         const phone = document.getElementById('phone').value;
+//         const checkIn = document.getElementById('check-in').value;
+//         const checkOut= document.getElementById('check-out').value;
+//         const adult = document.getElementById('adult').value;
+//         const child = document.getElementById('child').value;
+//         const bookingData = {
+//           name : name,
+//           phone : phone, 
+//           checkIn : checkIn,
+//           checkOut : checkOut,
+//           adult : adult,
+//           child : child,
+//           typeRoom : typeRoom,
+//           price : price,
+//         };  
+//         createBookRoom(bookingData);
+//         alert('Đặt phòng thành công');
+// }
+
+// function createBookRoom(data){
+//   fetch(apiBooking , {
+//     method: "POST",
+//     headers: {
+//       'Content-type': 'application/json'
+//     },
+//     body : JSON.stringify(data),
+//   })
+//   .then(function(respone){ 
+//     return respone.json();
+//   })
+//   .catch(error => {
+//     console.error("Đặt phòng thất bại" , error);
+//   });
+
+// }
 
 
 // render ra giao dien cac don dat phong
@@ -234,31 +215,30 @@ function createBookRoom(data){
 // });
 
 //  function tinh gia tam thoi
-function temporaryStart(){
-  temporary();
-  
-}
 
-function temporary(){
-  const fromDate = $('.fromDate').val();
-  const toDate = $('.toDate').val();
-  if(toDate <= fromDate){
-    alert("Ngày trả phải lớn hơn ngày nhận");
-    return false;
-  }
-  const donGia = $('.price.product-price').html();
-  const valuGia = $('.bost-price').html();
-  const thoiGianGiuaHaiNgay = (ngayDau,ngayCuoi) => (ngayCuoi - ngayDau)/1000*3600*24;
-  const ngayDau = new Date(fromDate);
-  const ngayCuoi = new Date(toDate);
-  const ketQua = thoiGianGiuaHaiNgay(ngayDau , ngayCuoi);
-  var tongTien;
-  tongTien = ketQua * valuGia;
-  btnTemp.addEventListener('click' , () =>{
-  var totalPrice = document.getElementById("btnTemp");
-      totalPrice.innerHTML = '<div class="div-tam-tinh"> <div class="gia-niem-yet">Giá niêm yết('+ ketQua + 'x' + donGia +'</div><div class="tong-gia><div class="title-tong-gia">Tổng tiền</div><div>(' + tongTien +')</div></div></div>';
-});
-}
+
+
+  // const fromDate = $('.fromDate' ).val();
+  // const toDate = $('.toDate').val();
+  // if(toDate <= fromDate){
+  //   alert("Ngày trả phải lớn hơn ngày nhận");
+  // }else{
+  //   const donGia = $('.price.product-price').html();
+  //   const valuGia = $('.bost-price').html();
+  //   const thoiGianGiuaHaiNgay = (ngayDau,ngayCuoi) => (ngayCuoi - ngayDau)/1000*3600*24;
+  //   const ngayDau = new Date(fromDate);
+  //   const ngayCuoi = new Date(toDate);
+  //   const ketQua = thoiGianGiuaHaiNgay(ngayDau , ngayCuoi);
+  //   var tongTien;
+  //   tongTien = ketQua * valuGia;
+  
+  // btnTemp.addEventListener('click' , () =>{
+  //   var totalPrice = document.getElementById("btnTemp");
+  //       totalPrice.innerHTML = '<div class="div-tam-tinh"> <div class="gia-niem-yet">Giá niêm yết('+ ketQua + 'x' + donGia +'</div><div class="tong-gia><div class="title-tong-gia">Tổng tiền</div><div>(' + tongTien +')</div></div></div>';
+  // });
+
+  // }
+ 
 
 
 

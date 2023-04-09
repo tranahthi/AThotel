@@ -55,6 +55,22 @@
       "tel": "0905109563",
       "password": "123456",
       "id": 7
+    },
+    {
+      "firstname": "tran",
+      "lastname": "thi",
+      "email": "thianhtran@gmail.com",
+      "tel": "0935177817",
+      "password": "123456",
+      "id": 8
+    },
+    {
+      "firstname": "tran",
+      "lastname": "anh",
+      "email": "123@gmail.com",
+      "tel": "093476322",
+      "password": "123456",
+      "id": 9
     }
   ],
   "bookings": [
@@ -115,16 +131,29 @@
       "typeRoom": "Phòng đơn view thành phố",
       "price": "700.000₫/Đêm",
       "id": 6
+    },
+    {
+      "name": "anh",
+      "phone": "0934634722",
+      "checkIn": "2023-04-12",
+      "checkOut": "2023-04-13",
+      "adult": "1",
+      "child": "2",
+      "typeRoom": "Phòng đơn tiêu chuẩn",
+      "price": "500.000₫/Đêm",
+      "id": 7
     }
   ],
-  "room":[
+  "room": [
     {
       "id": 1,
-      "name": "Phòng đơn tiêu chuẩn"
+      "roomName": "Phòng đơn tiêu chuẩn",
+      "pricePerDay":500000
     },
     {
       "id": 2,
-      "name": "Phòng đơn view thành phố"
+      "roomName": "Phòng đơn view thành phố",
+      "pricePerDay":700000
     }
   ]
 }
