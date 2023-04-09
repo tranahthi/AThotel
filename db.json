@@ -142,7 +142,11 @@
       "image": "/assets/img/anh_don_view_dep.webp",
       "alt" : "Phòng đơn tiêu chuẩn,",
       "guest" : "01",
-      "area" : 20
+      "area" : 20,
+      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 2,
@@ -151,7 +155,12 @@
       "image": "/assets/img/anh_don_view_dep.webp",
       "alt" : "Phòng đơn view thành phố",
       "guest" : "01",
-      "area" : 25
+      "area" : 25,
+      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+      
     },
     {
       "id": 3,
@@ -160,7 +169,11 @@
       "image": "/assets/img/anh_don_view_dep.webp",
       "alt" : "Phòng đơn view sân vườn",
       "guest" : "01",
-      "area" : 25
+      "area" : 25,
+      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 4,
@@ -169,7 +182,11 @@
       "image": "/assets/img/anh_don_view_dep.webp",
       "alt" : "Phòng đơn view biển",
       "guest" : "01",
-      "area" : 25
+      "area" : 25,
+      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     }
   ],
 
@@ -181,7 +198,12 @@
       "image": "/assets/img/anh_don_view_dep.webp",
       "alt" : "Phòng đôi tiêu chuẩn",
       "guest" : "02",
-      "area" : 25
+      "area" : 25,
+      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
+      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg5" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 2,
@@ -190,7 +212,12 @@
       "image": "/assets/img/anh_don_view_dep.webp",
       "alt" : "Phòng đôi view thành phố",
       "guest" : "02",
-      "area" : 30
+      "area" : 30,
+      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
+      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg5" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 3,
@@ -199,7 +226,12 @@
       "image": "/assets/img/anh_don_view_dep.webp",
       "alt" : "Phòng đôi view sân vườn",
       "guest" : "02",
-      "area" : 30
+      "area" : 30,
+      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
+      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg5" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     },
     {
       "id": 4,
@@ -208,8 +240,12 @@
       "image": "/assets/img/anh_don_view_dep.webp",
       "alt" : "Phòng đôi view biển",
       "guest" : "04",
-      "area" : 32
+      "area" : 32,
+      "svg1" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150",
+      "svg2" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150",
+      "svg3" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150",
+      "svg4" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150",
+      "svg5" : "https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
     }
-
   ]
 }

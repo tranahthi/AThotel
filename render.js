@@ -36,25 +36,29 @@ const renderSingleRoom = (datas) => {
                 <img
                   width="32"
                   height="32"
-                  src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
-                  alt="Cafe buổi sáng"
-                />
+                  src="${data.svg1}"
+                  alt="Cafe buổi sáng"/>
               </li>
               <li>
                 <img
                   width="32"
                   height="32"
-                  src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
-                  alt="Bồn tắm hoa sen"
-                />
+                  src="${data.svg2}"
+                  alt="Gọi đồ ăn tại phòng"/>
               </li>
               <li>
                 <img
                   width="32"
                   height="32"
-                  src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
-                  alt="Internet không dây"
-                />
+                  src="${data.svg3}"
+                  alt="Bồn tắm hoa sen"/>
+              </li>
+              <li>
+                <img
+                  width="32"
+                  height="32"
+                  src="${data.svg4}"
+                  alt="Internet không dây"/>
               </li>
             </ul>
           </div>
@@ -120,42 +124,36 @@ const renderDoubleRoom = (datas) => {
         <ul class="img-list-tag-room">
           <li>
             <img
-  
-              src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
-              alt="Cafe buổi sáng"
-            />
+              src="${data.svg1}"
+              alt="Cafe buổi sáng"/>
           </li>
           <li>
             <img
               width="32"
               height="32"
-              src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150"
-              alt="Gọi đồ ăn tại phòng"
-            />
+              src="${data.svg2}"
+              alt="Gọi đồ ăn tại phòng"/>
           </li>
           <li>
             <img
               width="32"
               height="32"
-              src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150"
-              alt="Bếp nấu tại phòng"
-            />
+              src="${data.svg3}"
+              alt="Bếp nấu tại phòng"/>
           </li>
           <li>
             <img
               width="32"
               height="32"
-              src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
-              alt="Bồn tắm hoa sen"
-            />
+              src="${data.svg4}"
+              alt="Bồn tắm hoa sen"/>
           </li>
           <li>
             <img
               width="32"
               height="32"
-              src="https://bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
-              alt="Internet không dây"
-            />
+              src="${data.svg5}"
+              alt="Internet không dây"/>
           </li>
         </ul>
       </div>
@@ -167,7 +165,7 @@ const renderDoubleRoom = (datas) => {
       </div>
       <div class="product-infor-room">
         <div class="price-room">
-          <span class="price">${data.price}/đêm</span>
+          <span class="price">${data.price}/Đêm</span>
         </div>
         <div class="booking-room">
           <a class="btn-booking" href="/phong-doi-tieu-chuan"
