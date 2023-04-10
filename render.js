@@ -80,9 +80,19 @@ const renderSingleRoom = (datas) => {
           </div>
         </div>
       </div>`
+
   );
+
+  
 }
 getSingleRoom(renderSingleRoom);
+
+const roomHandle = document.querySelector('.col-display-room')
+
+
+
+
+
 
 
 
