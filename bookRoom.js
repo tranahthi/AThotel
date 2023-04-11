@@ -1,15 +1,10 @@
 const apiBooking = 'http://localhost:3000/bookings';
-  const bookBtn = document.querySelector('.book')
+const bookForm = document.querySelector('.booking-form')
 
-
-  bookBtn&& bookBtn.addEventListener('click', function book(e) {
-       e.preventDefault()
-     handleBookingRoom ();
-     })
-  
 function handleBookingRoom(e) {
   e.preventDefault()
-  const typeRoom = document.getElementById('name-type-room').innerText;
+
+  // const typeRoom = document.getElementById('name-type-room').innerText;
   const price = document.getElementById('price').innerText;
   const name = document.getElementById('name').value;
   const phone = document.getElementById('phone').value;
@@ -24,7 +19,7 @@ function handleBookingRoom(e) {
     checkOut: checkOut,
     adult: adult,
     child: child,
-    typeRoom: typeRoom,
+    // typeRoom: typeRoom,
     price: price,
   };
   createBookRoom(bookingData);
@@ -39,11 +34,12 @@ function createBookRoom(data) {
     },
     body: JSON.stringify(data),
   })
-    .then(function (respone) {
-      return respone.json();
-    })
-    .catch(error => {
-      console.error("Đặt phòng thất bại", error);
-    });
-
+  .then(function (respone) {
+    return respone.json();
+  })
+  .catch(error => {
+    console.error("Đặt phòng thất bại", error);
+  });
+  
 }
+bookForm.addEventListener('submit', handleBookingRoom)

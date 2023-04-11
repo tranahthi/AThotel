@@ -7,6 +7,14 @@
       "tel": "09293213213",
       "password": "123456",
       "id": 1
+    },
+    {
+      "firstname": "vo",
+      "lastname": "dung",
+      "email": "votruongdung4@gmail.com",
+      "tel": "0905109563",
+      "password": "123456",
+      "id": 2
     }
   ],
   "bookings": [
