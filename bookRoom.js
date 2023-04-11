@@ -1,6 +1,12 @@
 const apiBooking = 'http://localhost:3000/bookings';
   const bookBtn = document.querySelector('.book')
-  console.log(bookBtn)
+
+
+  bookBtn&& bookBtn.addEventListener('click', function book(e) {
+       e.preventDefault()
+     handleBookingRoom ();
+     })
+  
 function handleBookingRoom(e) {
   e.preventDefault()
   const typeRoom = document.getElementById('name-type-room').innerText;
