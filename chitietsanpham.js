@@ -52,7 +52,10 @@ function openCity(cityName) {
           </div>
           <div class="price-room-same">
               <div>
-                  <h4>${data.price}đ/đêm</h4>
+                  <h4>${data.price.toLocaleString("vi-VN", {
+                    style: "currency",
+                    currency: "VND",
+                })}/đêm</h4>
               </div>
               <div class=""book-now>
                   <button>Đặt ngay</button>
@@ -60,6 +63,6 @@ function openCity(cityName) {
           </div>
       </div>
   </div>`
-    );
+    ).join('');
   }
     getSinggleRoom(renderSinggleRoom);

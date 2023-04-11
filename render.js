@@ -70,18 +70,19 @@ const renderSingleRoom = (datas) => {
             </div>
             <div class="product-infor-room">
             <div class="price-room">
-            <span class="price">${data.price}đ/Đêm</span>
+            <span class="price">${data.price.toLocaleString("vi-VN", {
+              style: "currency",
+              currency: "VND",
+          })}/Đêm</span>
               </div>
               <div class="booking-room">
-              <a class="btn-booking" href="datphongdonchitiet.html" onclick="getRoomId(${data.id})"
-              >Đặt phòng</a
-              >
+              <a class="btn-booking" href="datphongdonchitiet.html" onclick="getRoomId(${data.id})">Đặt phòng</a>
               </div>
               </div>
               </div>
               </div>`
 
-  );
+  ).join('');
 
 }
 getSingleRoom(renderSingleRoom);
@@ -173,17 +174,20 @@ const renderDoubleRoom = (datas) => {
         </div>
         <div class="product-infor-room">
         <div class="price-room">
-          <span class="price">${data.price}đ/Đêm</span>
+          <span class="price">${data.price.toLocaleString("vi-VN", {
+            style: "currency",
+            currency: "VND",
+        })}/Đêm</span>
           </div>
           <div class="booking-room">
-          <a class="btn-booking" href="/phong-doi-tieu-chuan"
+          <a class="btn-booking" href="datphongdoichitiet.html" onclick="getRoomId(${data.id})
           >Đặt phòng</a
           >
         </div>
         </div>
     </div>
   </div>`
-  );
+  ).join('') ;
 }
 getDoubleRoom(renderDoubleRoom);
 

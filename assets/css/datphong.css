@@ -334,6 +334,10 @@ body{
 .form-book{
     padding-right: 40px;
     padding-top: 10px;
+    
+}
+.form-book input{
+    padding: 20px;
 }
 .sub-content {
     position: absolute;

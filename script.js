@@ -5,14 +5,14 @@ const $$ = document.querySelectorAll.bind(document);
 
 const loginBtn = $('.login');
 const registerBtn = $('.register');
-// const bookBtn = $('.book');
-// const tempBtn = $('.button-temp');
-// console.log(registerBtn);
+const bookBtn = $('.book');
+const tempBtn = $('.button-temp');
+// console.log(registerBtn)
+
 const clickSearchNode = $('.click-search');
 const searchNode = $('.search-header');
 const bookRoom = $('.book-room'); 
 const logoHeader = $('.logo-header');
-
 
 
 searchNode.addEventListener('click', () => {
@@ -21,7 +21,6 @@ searchNode.addEventListener('click', () => {
 
 
 logoHeader.addEventListener('click', () => {
-  window.location.reload();
   window.location = `homepage.html`;
 
 })
@@ -69,7 +68,7 @@ function handleLogin(users) {
     if (user && user.password === password) {
       localStorage.setItem("logUser", user.id);
       localStorage.setItem("isLogin", true);
-      alert("dang nhap thanh cong");
+      alert('dang nhap thanh cong');
       window.location = `homepage.html`;
     } else {
       alert("Tài khoản hoặc mật khẩu không đúng");
@@ -112,7 +111,19 @@ function handleRegister(){
     password : password,
   };
   createUser(user);
-  alert('tao tai khoan thanh cong');
+  
+  var toast = document.createElement("div");
+  toast.classList.add("toast");
+  toast.innerText = "Đăng ký thành công!";
+  document.body.appendChild(toast);
+
+  // Tự động ẩn thông báo toast sau 3 giây
+  setTimeout(function() {
+    toast.classList.add("hide");
+  }, 6000);
+
+  window.location = `login.html`;
+
   
 }
 
@@ -129,7 +140,7 @@ function handleRegister(){
           '<a href="/homepage.html"  title="Đăng xuất" id="logout" >Đăng xuất</a> ';
           document.getElementById("register-Btnn").innerHTML = logoutBtn;
     const accountBtn = 
-          '<a href="/homepage.html">Tài khoản</a>';
+          '<a href="/account.html">Tài khoản</a>';
           document.getElementById("login-Btn").innerHTML = accountBtn;
   };
 

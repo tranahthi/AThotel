@@ -1,23 +1,46 @@
 
 
 
-const apiRoom = 'http://localhost:3000/room';
+const apiRoom = 'http://localhost:3000/singleroom';
 
 
-
-
-
-
-function handleTemporary(){
-// lấy ngày từ input
+function calculateTempPrice(){
+    
+    // lấy ngày từ input
     const startDate = document.getElementById('check-in').value;
-    const endDate = document.getElementById('checkOut').value;
+    const endDate = document.getElementById('check-out').value;
+    //tính số ngày đặt phòng
+    const numberOfDay = Math.round(Math.abs((new Date(endDate) - new Date(startDate)) / (1000 * 60 * 60 * 24)));
+    console.log(startDate);
 
-//tính số ngày đặt phòng
-    const numberOfDay = Math.ads((new Date(endDate) - new Date(startDate)) / (1000 * 60 * 60 * 24));
+    fetch(apiRoom)
+    .then(function (respone) {
+        return respone.json();
+    })
+    .then(data =>{
+        const roomPrice = data[0].price;
+        const tempPrice = roomPrice *  numberOfDay;
+        document.getElementById('total-price').innerHTML = tempPrice.toLocaleStringtoLocaleString("vi-VN", {
+            style: "currency",
+            currency: "VND",
+        })
+
+    });
+
+}
+
+
+
+
+
+
+
+
+
+
 
     
-}
+
 
 
 

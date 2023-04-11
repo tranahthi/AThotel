@@ -16,7 +16,7 @@ function bookBook(){
     handleBookingRoom ();
   }
   
-  bookBtn&& bookBtn.addEventListener('click', function book(e) {
+  bookBtn&& bookBtn.addEventListener('submit', function book(e) {
     e.preventDefault()
     handleBookingRoom ();
   })
