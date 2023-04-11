@@ -430,8 +430,8 @@ function getDoubleRoom(callback) {
       .then(callback);
 }
 function getDoubleRoomId(rooms) {
-  const roomDoubleId = localStorage.getItem('roomDoubleId')
-  const doubleRoomDetail = rooms.find(room => room.id == roomDoubleId)
+  const roomId = localStorage.getItem('roomId')
+  const doubleRoomDetail = rooms.find(room => room.id == roomId)
   renderDoubleRoomDetail(doubleRoomDetail);
   // console.log(roomDoubleId);
 }
