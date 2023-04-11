@@ -10,17 +10,7 @@
     }
   ],
   "bookings": [
-    {
-      "name": "nh",
-      "phone": "0934634722",
-      "checkIn": "2023-04-12",
-      "checkOut": "2023-04-13",
-      "adult": "1",
-      "child": "1",
-      "typeRoom": "Phòng đơn tiêu chuẩn",
-      "price": "500.000₫/Đêm",
-      "id": 1
-    }
+    
   ],
   "singleroom": [
     {
