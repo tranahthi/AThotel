@@ -98,7 +98,9 @@ getSingleRoom(renderSingleRoom);
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-
+function getDoubleRoomId(id) {
+  localStorage.setItem('roomDoubleId', id)
+}
 
 
 function getDoubleRoom(callback) {
@@ -180,7 +182,7 @@ const renderDoubleRoom = (datas) => {
         })}/Đêm</span>
           </div>
           <div class="booking-room">
-          <a class="btn-booking" href="datphongdoichitiet.html" onclick="getRoomId(${data.id})
+          <a class="btn-booking" href="datphongdoichitiet.html" onclick="getDoubleRoomId(${data.id})"
           >Đặt phòng</a
           >
         </div>

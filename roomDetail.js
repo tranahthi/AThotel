@@ -1,5 +1,4 @@
 const roomDetailHandle = document.querySelector('.room-detail')
-
 var apiSingleRoom = 'http://localhost:3000/singleroom';
 function getSingleRoom(callback) {
     fetch(apiSingleRoom)
@@ -10,7 +9,7 @@ function getSingleRoom(callback) {
 }
 function getSingleRoomId(rooms) {
     const roomId = localStorage.getItem('roomId')
-    const singleRoomDetail = rooms.find(room => room.id == roomId)
+    const singleRoomDetail = rooms?.find(room => room.id == roomId)
     renderSingleRoomDetail(singleRoomDetail)
 }
 function renderSingleRoomDetail(singleRoomDetail) {
@@ -79,7 +78,6 @@ function renderSingleRoomDetail(singleRoomDetail) {
       <img src="./assets/img/anh_don_view_dep.webp" alt="ảnh phòng đơn" />
     </div>
   </div>
-
   <div class="title-form-main">
     <div class="title-main">
       <div class="sub-title-main">
@@ -268,7 +266,7 @@ function renderSingleRoomDetail(singleRoomDetail) {
               </button>
             </td>
             <td>
-              <button type="submit" class="book"><p>Đặt phòng</p></button>
+              <button type="submit" class="book" ><p>Đặt phòng</p></button>
             </td>
           </tr>
         </table>
@@ -420,8 +418,6 @@ getSingleRoom(getSingleRoomId);
 
 var apiDoubleRoom = 'http://localhost:3000/doubleroom';
 const roomDoubleDetailHandle = document.querySelector('.room-double-detail');
-
-
 function getDoubleRoom(callback) {
   fetch(apiDoubleRoom)
       .then(function (respone) {
@@ -433,7 +429,6 @@ function getDoubleRoomId(rooms) {
   const roomId = localStorage.getItem('roomId')
   const doubleRoomDetail = rooms.find(room => room.id == roomId)
   renderDoubleRoomDetail(doubleRoomDetail);
-  // console.log(roomDoubleId);
 }
 function renderDoubleRoomDetail(doubleRoomDetail) {
   roomDoubleDetailHandle.innerHTML =

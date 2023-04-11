@@ -5,7 +5,6 @@ const $$ = document.querySelectorAll.bind(document);
 
 const loginBtn = $('.login');
 const registerBtn = $('.register');
-const bookBtn = $('.book');
 const tempBtn = $('.button-temp');
 // console.log(registerBtn)
 
