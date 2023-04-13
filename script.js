@@ -56,7 +56,6 @@ function getUser(callback) {
       return respone.json();
     })
     .then(callback);
-
 }
 
 function handleLogin(users) {
@@ -67,6 +66,8 @@ function handleLogin(users) {
     if (user && user.password === password) {
       localStorage.setItem("logUser", user.id);
       localStorage.setItem("isLogin", true);
+      // localStorage.setItem("email", email);
+      // localStorage.setItem("pass", password);
       alert('dang nhap thanh cong');
       window.location = `homepage.html`;
     } else {
@@ -92,7 +93,6 @@ function createUser (data) {
   }).then(function(response){
     return response.json();
   }).catch((error) =>console.error(error));
-
 }
 
 

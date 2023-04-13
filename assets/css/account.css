@@ -1,3 +1,12 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    list-style: none;
+}
+
 .body-paper .sub-about-us{
     width: 100%;
     height: 54px;
@@ -49,4 +58,50 @@
 }
 .sub-about-us{
     margin-bottom: 15px ;
+}
+
+.hidden-infor-cus {
+    visibility: hidden;
+}
+
+.infor-customer {
+    display: flex;
+    gap: 100px;
+}
+.title-infor-cus{
+    padding: 40px;
+}
+.hidden-infor-cus{
+    padding: 40px;
+}
+.title-infor-cus h3{
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.hello{
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.hello span{
+    color: #a1731d;
+    font-weight: bold;
+}
+.hidden-infor-cus h3{
+    padding-bottom:30px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.name-email-tel p{
+    padding-bottom:20px;
+    font-weight: bold;
+}
+.name-email-tel span{
+    font-weight: 500;
+}
+.info-cus:hover{
+    cursor: pointer;
+    color: #a1731d;
 }

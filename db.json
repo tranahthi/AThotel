@@ -15,10 +15,77 @@
       "tel": "0905109563",
       "password": "123456",
       "id": 2
+    },
+    {
+      "firstname": "tran",
+      "lastname": "anh",
+      "email": "abcz@gmail.com",
+      "tel": "09230842384",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "firstname": "tran ",
+      "lastname": "anh thi",
+      "email": "1234@gmail.com",
+      "tel": "23493209",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "firstname": "anh thi",
+      "lastname": "thi",
+      "email": "anhthi12345678@gmail.com",
+      "tel": "02340934",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "firstname": "anhthi",
+      "lastname": "anhthi",
+      "email": "trananhthi25678@gmail.com",
+      "tel": "0923849234",
+      "password": "25062002",
+      "id": 6
+    },
+    {
+      "firstname": "tran",
+      "lastname": "anh thi",
+      "email": "anh@gmail.com",
+      "tel": "0935177801",
+      "password": "123456",
+      "id": 7
+    },
+    {
+      "firstname": "anh",
+      "lastname": "anh",
+      "email": "anhanhanh@gmail.com",
+      "tel": "029340324",
+      "password": "123456",
+      "id": 8
+    },
+    {
+      "firstname": "Nguyễn ",
+      "lastname": "Minh Đức",
+      "email": "nguyenminhduc@gmail.com",
+      "tel": "0935177801",
+      "password": "123456",
+      "id": 9
     }
   ],
   "bookings": [
-    
+    {
+      "name": "nguyễn minh đức",
+      "phone": "0935177801",
+      "checkIn": "2023-04-13",
+      "checkOut": "2023-04-15",
+      "adult": "1",
+      "child": "1",
+      "nameTypeRoom": "Phòng đơn tiêu chuẩn",
+      "price": "500.000 ₫/Đêm",
+      "total": 1000000,
+      "id": 1
+    }
   ],
   "singleroom": [
     {
@@ -39,7 +106,7 @@
       "id": 2,
       "name": "Phòng đơn view thành phố",
       "price": 700000,
-      "image": "/assets/img/anh_don_view_dep.webp",
+      "image": "/assets/img/anh-phong-ngu4.jpg",
       "alt": "Phòng đơn view thành phố",
       "guest": "01",
       "child": "02",
@@ -53,7 +120,7 @@
       "id": 3,
       "name": "Phòng đơn view sân vườn",
       "price": 800000,
-      "image": "/assets/img/anh_don_view_dep.webp",
+      "image": "/assets/img/anh_phong_don_view_san_vuon.webp",
       "alt": "Phòng đơn view sân vườn",
       "guest": "01",
       "child": "02",
@@ -67,7 +134,7 @@
       "id": 4,
       "name": "Phòng đơn view biển",
       "price": 900000,
-      "image": "/assets/img/anh_don_view_dep.webp",
+      "image": "/assets/img/anh_phong_don_view_bien.webp",
       "alt": "Phòng đơn view biển",
       "guest": "01",
       "child": "02",
@@ -83,7 +150,7 @@
       "id": 1,
       "name": "Phòng đôi tiêu chuẩn",
       "price": 950000,
-      "image": "/assets/img/anh_don_view_dep.webp",
+      "image": "./assets/img/anh_phong_doi_tieu_chuan.webp",
       "alt": "Phòng đôi tiêu chuẩn",
       "guest": "02",
       "child": "02",
@@ -98,7 +165,7 @@
       "id": 2,
       "name": "Phòng đôi view thành phố",
       "price": 1100000,
-      "image": "/assets/img/anh_don_view_dep.webp",
+      "image": "./assets/img/anh_phong_doi_view_thanh_pho.webp",
       "alt": "Phòng đôi view thành phố",
       "guest": "02",
       "child": "02",
@@ -113,7 +180,7 @@
       "id": 3,
       "name": "Phòng đôi view sân vườn",
       "price": 1200000,
-      "image": "/assets/img/anh_don_view_dep.webp",
+      "image": "/assets/img/anh_phong_doi_view_san_vuon.webp",
       "alt": "Phòng đôi view sân vườn",
       "guest": "02",
       "child": "02",
@@ -128,7 +195,7 @@
       "id": 4,
       "name": "Phòng đôi 2 giường đôi",
       "price": 1500000,
-      "image": "/assets/img/anh_don_view_dep.webp",
+      "image": "/assets/img/anh_phong_doi_2_giuong_doi.webp",
       "alt": "Phòng đôi view biển",
       "guest": "04",
       "child": "02",

@@ -1,4 +1,4 @@
-const roomDetailHandle = document.querySelector('.title-a-a')
+const roomDetailHandle = document.querySelector('.name-type-room')
 const h3H3 = document.querySelector('.h3-h3')
 const adultP =document.querySelector('.adult-p')
 const childP = document.querySelector('.child-p')
@@ -19,7 +19,7 @@ function getSingleRoomId(rooms) {
 }
 function renderSingleRoomDetail(singleRoomDetail) {
     roomDetailHandle.innerHTML = 
-    `<a class="title-a" href="">${singleRoomDetail.name}</a>`
+    `${singleRoomDetail.name}`
     h3H3.innerHTML =`${singleRoomDetail.name}`
     adultP.innerHTML = `${singleRoomDetail.guest}người lớn`
     childP.innerHTML = `${singleRoomDetail.child} trẻ em`
@@ -35,6 +35,37 @@ function renderSingleRoomDetail(singleRoomDetail) {
 }
 getSingleRoom(getSingleRoomId);
 
+
+
+
+
+
+var apiDoubleRoom = 'http://localhost:3000/doubleroom';
+function getDoubleRoom(callback) {
+    fetch(apiDoubleRoom)
+        .then(function (respone) {
+            return respone.json();
+        })
+        .then(callback);
+}
+function getDoubleRoomId(rooms) {
+    const DoubleRoomId = localStorage.getItem('roomId')
+    const doubleRoomDetail = rooms.find(room => room.id == DoubleRoomId)
+    renderDoubleRoomDetail(doubleRoomDetail);
+}
+function renderDoubleRoomDetail(doubleRoomDetail) {
+    roomDetailHandle.innerHTML = 
+    `${doubleRoomDetail.name}`
+    h3H3.innerHTML =`${doubleRoomDetail.name}`
+    adultP.innerHTML = `${doubleRoomDetail.guest}người lớn`
+    childP.innerHTML = `${doubleRoomDetail.child} trẻ em`
+    areaP.innerHTML = `Phòng ${doubleRoomDetail.area}m²` 
+    priceProduct.innerHTML = `${doubleRoomDetail.price.toLocaleString("vi-VN", {
+      style: "currency",
+      currency: "VND",
+  })}/Đêm`
+}
+getDoubleRoom(getDoubleRoomId);
 
 
 
